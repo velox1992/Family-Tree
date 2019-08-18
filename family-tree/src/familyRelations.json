@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Georg Braun",
+    "class": "man",
+    "marriages": [
+      {
+        "spouse": {
+          "name": "Katharina Braun",
+          "class": "woman"
+        },
+        "children": [
+          {
+            "name": "Achim",
+            "class": "man"
+          },
+          {
+            "name": "Otmar",
+            "class": "man"
+          },
+          {
+            "name": "Sigrid",
+            "class": "woman"
+          },
+          {
+            "name": "Katja",
+            "class": "woman"
+          },
+          {
+            "name": "Christa",
+            "class": "woman"
+          }
+        ]
+      }
+    ]
+  }
+]
