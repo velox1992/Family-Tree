@@ -1,5 +1,7 @@
 import React from "react";
 import dTree from "d3-dtree";
+import "./FamilyGraph.css"
+import 'jsoneditor-react/es/editor.min.css';
 
 class FamilyGraph extends React.Component {
   componentDidMount() {
@@ -52,7 +54,7 @@ class FamilyGraph extends React.Component {
 
     // Container vor erneutem Graph erstellen leeren.
     document.getElementById("graph").innerHTML = "";
-    dTree.init(data, this.graphOptions);
+    dTree.init(data, options);
   }
 }
 
