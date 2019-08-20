@@ -4,16 +4,6 @@ import FamilyGraph from "./FamilyGraph.js";
 import JSONInput from 'react-json-editor-ajrm';
     import locale    from 'react-json-editor-ajrm/locale/en';
 
-class JsonEditor extends React.Component {
-  render() {
-    return (
-      <textarea
-        value={JSON.stringify(this.props.value)}
-        onChange={this.props.onChange}
-      />
-    );
-  }
-}
 
 class App extends React.Component {
   constructor(props) {
