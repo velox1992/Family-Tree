@@ -1,7 +1,7 @@
 import React from "react";
 import dTree from "d3-dtree";
-import "./FamilyGraph.css"
-import 'jsoneditor-react/es/editor.min.css';
+import "./FamilyGraph.css";
+import "jsoneditor-react/es/editor.min.css";
 
 class FamilyGraph extends React.Component {
   componentDidMount() {
@@ -11,18 +11,15 @@ class FamilyGraph extends React.Component {
   }
 
   componentDidUpdate() {
+    console.log("componentDidUpdate");
+    console.log(this.props.data);
     if (this.props.data !== undefined) {
       this.renderGraph(this.props.data);
     }
   }
 
   render() {
-    return (
-      <>
-        <h2>Graph</h2>
-        <div id="graph" />
-      </>
-    );
+    return <div id="graph" />;
   }
 
   renderGraph(data) {
@@ -32,10 +29,6 @@ class FamilyGraph extends React.Component {
       width: 600,
       height: 400,
       callbacks: {
-        /*
-                Callbacks should only be overwritten on a need to basis.
-                See the section about callbacks below.
-              */
       },
       margin: {
         top: 0,
@@ -52,9 +45,11 @@ class FamilyGraph extends React.Component {
       }
     };
 
-    // Container vor erneutem Graph erstellen leeren.
-    document.getElementById("graph").innerHTML = "";
-    dTree.init(data, options);
+
+      // Container vor erneutem Graph erstellen leeren.
+      document.getElementById("graph").innerHTML = "";
+      dTree.init(data, options);
+
   }
 }
 
