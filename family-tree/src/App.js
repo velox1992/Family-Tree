@@ -1,35 +1,42 @@
 import React from "react";
 import "./App.css";
-import FamilyGraph from "./FamilyGraph.js"
-
+import FamilyGraph from "./FamilyGraph.js";
 
 class JsonEditor extends React.Component {
   render() {
-    return <textarea value={this.props.value} onChange={this.props.onChange} />;
+    return (
+      <textarea
+        value={JSON.stringify(this.props.value)}
+        onChange={this.props.onChange}
+      />
+    );
   }
 }
-
-
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      //familyRelationStructure: JSON.stringify(familyRelations),
+      familyRelations: require("./familyRelations.json")
     };
 
     this.JsonValueChanged = this.JsonValueChanged.bind(this);
   }
 
   JsonValueChanged(event) {
-    this.setState({ familyRelationStructure: event.target.value });
+    var hParsedJson = JSON.parse(event.target.value);
+    this.setState({ familyRelations: hParsedJson });
   }
 
   render() {
     return (
       <div className="App">
         <h1>Stammbaum</h1>
-        <FamilyGraph />
+        <JsonEditor
+          value={this.state.familyRelations}
+          onChange={this.JsonValueChanged}
+        />
+        <FamilyGraph data={this.state.familyRelations} />
       </div>
     );
   }
