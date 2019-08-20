@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import FamilyGraph from "./FamilyGraph.js"
+
 
 class JsonEditor extends React.Component {
   render() {
@@ -7,15 +9,7 @@ class JsonEditor extends React.Component {
   }
 }
 
-class FamilyGraph extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  render() {
-    return <h2>Graph</h2>;
-  }
-}
 
 class App extends React.Component {
   constructor(props) {
@@ -34,13 +28,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Stammbaum</h1>
         <FamilyGraph />
-        {
-          <JsonEditor
-            value={this.state.familyRelationStructure}
-            onChange={this.JsonValueChanged}
-          />
-        }
       </div>
     );
   }
