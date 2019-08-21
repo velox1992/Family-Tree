@@ -1,37 +1,107 @@
 [
- 
   {
-    "name": "Georg Braun",
+    "name": "Katharina geb. van Afferden",
     "class": "man",
+
     "marriages": [
       {
         "spouse": {
-          "name": "Katharina geb.s Schürgers",
-          "class": "woman"
+          "name": "Willibald Schürgers",
+          "class": "man"
         },
         "children": [
           {
-            "name": "Achim",
-            "class": "man",
+            "name": "Katharina geb.s Schürgers",
+            "class": "woman",
             "marriages": [
               {
                 "spouse": {
-                  "name": "Beate  geb. Schepp",
-                  "class": "woman"
+                  "name": "Georg Braun",
+                  "class": "man"
                 },
                 "children": [
                   {
-                    "name": "Christine geb. Peters",
-                    "class": "woman",
+                    "name": "Achim",
+                    "class": "man",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "Ralph Drechsler",
-                          "class": "man"
+                          "name": "Beate  geb. Schepp",
+                          "class": "woman"
                         },
                         "children": [
                           {
-                            "name": "Till",
+                            "name": "Christine geb. Peters",
+                            "class": "woman",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Ralph Drechsler",
+                                  "class": "man"
+                                },
+                                "children": [
+                                  {
+                                    "name": "Till",
+                                    "class": "man"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Barbara Braun",
+                            "class": "woman",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Lars geb. Windmüller",
+                                  "class": "man"
+                                },
+                                "children": [
+                                  {
+                                    "name": "Lasse",
+                                    "class": "man"
+                                  },
+                                  {
+                                    "name": "Marta",
+                                    "class": "woman"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Annemarie geb. Braun",
+                            "class": "woman",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Sebastian Schmitz",
+                                  "class": "man"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Otmar Braun",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Renate geb. Rosarius",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Karina Braun",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Georg Braun",
                             "class": "man"
                           }
                         ]
@@ -39,21 +109,105 @@
                     ]
                   },
                   {
-                    "name": "Barbara Braun",
+                    "name": "Sigrid geb. Braun",
                     "class": "woman",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "Lars geb. Windmüller",
+                          "name": "Ralf Hammerschmidt",
                           "class": "man"
                         },
                         "children": [
                           {
-                            "name": "Lasse",
+                            "name": "Philipp Hammerschmidt",
+                            "class": "man",
+                            "marriages": [
+                              {
+                                "spouse": {
+                                  "name": "Denise Bücken",
+                                  "class": "woman"
+                                },
+                                "children": [
+                                  {
+                                    "name": "Marlon",
+                                    "class": "man"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Kai Hammerschmidt",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Katja geb. Braun",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Dirk Semleit",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Jana Semleit",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Thorsten Semleit",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Christa Braun",
+                    "class": "woman"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Marianne geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Hubert Verhülsdonk",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Ludger Verhülsdonk",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Martin",
                             "class": "man"
                           },
                           {
-                            "name": "Marta",
+                            "name": "Christian",
+                            "class": "man"
+                          },
+                          {
+                            "name": "Anne",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Merle",
                             "class": "woman"
                           }
                         ]
@@ -61,65 +215,17 @@
                     ]
                   },
                   {
-                    "name": "Annemarie geb. Braun",
+                    "name": "Ursula geb. Verhülsdonk",
                     "class": "woman",
                     "marriages": [
                       {
                         "spouse": {
-                          "name": "Sebastian Schmitz",
+                          "name": "Hans",
                           "class": "man"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Otmar Braun",
-            "class": "man",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "Renate geb. Rosarius",
-                  "class": "woman"
-                },
-                "children": [
-                  {
-                    "name": "Karina Braun",
-                    "class": "woman"
-                  },
-                  {
-                    "name": "Georg Braun",
-                    "class": "man"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Sigrid geb. Braun",
-            "class": "woman",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "Ralf Hammerschmidt",
-                  "class": "man"
-                },
-                "children": [
-                  {
-                    "name": "Philipp Hammerschmidt",
-                    "class": "man",
-                    "marriages": [
-                      {
-                        "spouse": {
-                          "name": "Denise Bücken",
-                          "class": "woman"
                         },
                         "children": [
                           {
-                            "name": "Marlon",
+                            "name": "Henry",
                             "class": "man"
                           }
                         ]
@@ -127,38 +233,34 @@
                     ]
                   },
                   {
-                    "name": "Kai Hammerschmidt",
-                    "class": "man"
+                    "name": "Dieter Verhülsdonk",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Elke geb. Schiwenk",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Sebastian",
+                            "class": "man"
+                          },
+                          {
+                            "name": "Florian",
+                            "class": "man"
+                          },
+                          {
+                            "name": "Lena",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
             ]
-          },
-          {
-            "name": "Katja geb. Braun",
-            "class": "woman",
-            "marriages": [
-              {
-                "spouse": {
-                  "name": "Dirk Semleit",
-                  "class": "man"
-                },
-                "children": [
-                  {
-                    "name": "Jana Semleit",
-                    "class": "woman"
-                  },
-                  {
-                    "name": "Thorsten Semleit",
-                    "class": "man"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Christa Braun",
-            "class": "woman"
           }
         ]
       }
