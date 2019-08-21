@@ -19,7 +19,7 @@ class FamilyGraph extends React.Component {
   }
 
   render() {
-    return <div id="graph" />;
+    return <div id="graph"/>;
   }
 
   renderGraph(data) {

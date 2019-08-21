@@ -12,6 +12,13 @@ body {
   display:block;
 }
 
-.text-center {
-  text-align:center
+
+.center-text {
+  text-align: center;
+}
+
+/* Div des JsonEditors */
+div[name="outer-box"] {
+  /*margin: 0px in der React-Komponente definiert. Zum Zentrieren deshalb ...*/
+  margin: auto !important; 
 }

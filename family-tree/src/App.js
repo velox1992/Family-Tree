@@ -24,28 +24,41 @@ class App extends React.Component {
   }
 
   render() {
+    var hJsonEditor = (
+      <JSONInput
+        className="test"
+        placeholder={this.state.familyRelations} // data to display
+        theme="dark_vscode_tribute"
+        locale={locale}
+        colors={{
+          string: "#DAA520" // overrides theme colors with whatever color value you want
+        }}
+        height="550px"
+        onChange={this.handleJsonValueChange}
+      />
+    );
+
+    console.log(hJsonEditor);
+
     return (
       <>
-      <Container>  <Jumbotron ><h1>Familienstammbaum</h1></Jumbotron></Container>
-      
-        <Container fluid="true">
-          <Row> 
+        <Container>
+          {" "}
+          <Jumbotron>
+            <h1>Familienstammbaum</h1>
+          </Jumbotron>
+        </Container>
+
+        <Container>
+          <Row>
             <Col>
-              <FamilyGraph data={this.state.familyRelations} />
+              <div className="center-text">
+                <FamilyGraph data={this.state.familyRelations} />
+              </div>
             </Col>
-            <Col>
-            <div><h2>Hey</h2></div>
-              <JSONInput
-                placeholder={this.state.familyRelations} // data to display
-                theme="dark_vscode_tribute"
-                locale={locale}
-                colors={{
-                  string: "#DAA520" // overrides theme colors with whatever color value you want
-                }}
-                height="550px"
-                onChange={this.handleJsonValueChange}
-              />
-            </Col>
+          </Row>
+          <Row>
+            <Col>{hJsonEditor}</Col>
           </Row>
         </Container>
       </>
