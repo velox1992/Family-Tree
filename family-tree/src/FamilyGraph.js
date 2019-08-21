@@ -26,7 +26,7 @@ class FamilyGraph extends React.Component {
     const options = {
       target: "#graph",
       debug: false,
-      width: 600,
+      width: 800,
       height: 400,
       callbacks: {
       },
