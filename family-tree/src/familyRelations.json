@@ -261,9 +261,129 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Hildegard geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Horst Hegger",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Sabine geb. Hegger",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Henne Dammer",
+                          "class": "man"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Jutta geb. Hegger",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Raimung Pogcsz",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Lara",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dagmar geb. Hegger",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "? Schmidt",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Lisa",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Toni",
+                            "class": "man"
+                          },
+                          {
+                            "name": "Felix",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Karina geb. Hegger",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Andreas Lind",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Emma",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Madita",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Elsi geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Peter Velten Lind",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Karin Velten",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Rainer geb. Bock",
+                          "class": "man"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
     ]
   }
+  
+  
 ]
