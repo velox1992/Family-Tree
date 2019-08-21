@@ -379,7 +379,315 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Günther Schürgers",
+            "class": "man",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Nelly Liedges",
+                  "class": "woman"
+                },
+                "children": [
+                  {
+                    "name": "Jan Schürgers",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "",
+                            "class": "man"
+                          },
+                          {
+                            "name": "",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Marion geb. Schürgers",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "",
+                            "class": "man"
+                          },
+                          {
+                            "name": "",
+                            "class": "man"
+                          },
+                          {
+                            "name": "",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },{
+            "name": "Kläre geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Franz Behet",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Frank Behet",
+                    "class": "man"                    
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ria geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Heinz Maes",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Markus Maes",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Angela geb. Beckedahl",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Julia",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Patrik Maes",
+                    "class": "man"                    
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hubert Schürgers",
+            "class": "man",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Lore geb. Lintsches",
+                  "class": "woman"
+                },
+                "children": [
+                  {
+                    "name": "Gisela geb. Schürgers",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Nicole",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Verena",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Elke geb. Schürgers",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Stefanie",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Pascal",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Norbert Schürgers",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Katja geb. Kub",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Jana Marie Schürgers",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Lukas Schürgers",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Adele geb. Schürgers",
+            "class": "woman",
+            "marriages": [
+              {
+                "spouse": {
+                  "name": "Heinz Wieland",
+                  "class": "man"
+                },
+                "children": [
+                  {
+                    "name": "Beatrix geb. Wieland",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Sven",
+                            "class": "man"
+                          },
+                          {
+                            "name": "Melanie",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ulrich Wieland",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Gaby geb.",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Heidi",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Claudia",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ruth geb. Wieland",
+                    "class": "woman",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "Norbert Volmer",
+                          "class": "man"
+                        },
+                        "children": [
+                          {
+                            "name": "Stefanie",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Sebastian",
+                            "class": "man"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Robert Wieland",
+                    "class": "man",
+                    "marriages": [
+                      {
+                        "spouse": {
+                          "name": "",
+                          "class": "woman"
+                        },
+                        "children": [
+                          {
+                            "name": "Feemina",
+                            "class": "woman"
+                          },
+                          {
+                            "name": "Florian",
+                            "class": "woman"
+                          }
+                          ,
+                          {
+                            "name": "Annika",
+                            "class": "woman"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Peter Wieland",
+                    "class": "man"
+                    
+                  }
+                ]
+              }
+            ]
           }
+          
         ]
       }
     ]
