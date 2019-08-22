@@ -21,6 +21,13 @@ class Connection {
     this.partner1 = partner1;
     this.partner2 = partner2;
   }
+
+  getPartner(person){
+      if (this.partner1 == person ){
+          return this.partner2;
+      }
+      return this.partner1;
+  }
 }
 
 class Family {
@@ -39,6 +46,48 @@ class Family {
 
   addConnection(connection) {
     this.connections.push(connection);
+  }
+
+  createGraphData(){
+      var hGraph = [];
+      var hRootPerson = this.persons[0];
+      var hNewPerson = {
+          "name": hRootPerson.name,
+          "class": hRootPerson.gender
+      }
+
+      if (hRootPerson.connection !== undefined){
+          // Partner ermitteln
+          var hPartner = hRootPerson.connection.getPartner(hRootPerson);
+          var hNewPartner = {
+              "name": hPartner.name,
+              "class": hPartner.gender
+          }
+          
+          var hChildren = [];
+          // Kinder ermitteln
+          hRootPerson.connection.children.forEach(child => {
+              var hNewChild = {
+                "name": child.name,
+                "class": child.gender            
+              }
+              hChildren.push(hNewChild);
+          })
+
+
+          hNewPerson["marriages"] = [{
+              "spouse": hNewPartner,
+              "children": [hChildren]
+          }] ;
+
+      }
+
+      hGraph.push(hNewPerson);
+
+      console.log(JSON.stringify(hGraph));
+
+
+
   }
 }
 
@@ -115,3 +164,5 @@ var hFamilyBuilder = new FamilyBuilder();
 var hFamilieBraun = hFamilyBuilder.importFamilyData("./FamilyData.json");
 console.log(hFamilieBraun.persons);
 console.log(hFamilieBraun.connections);
+
+hFamilieBraun.createGraphData();
