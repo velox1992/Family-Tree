@@ -19,6 +19,56 @@
             "id": 3,
             "name": "Georg Braun",
             "gender": "man"
+        },
+        {
+            "id": 4,
+            "name": "Katharina geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 5,
+            "name": "Georg Braun",
+            "gender": "man"
+        },
+        {
+            "id": 6,
+            "name": "Sigrid geb. Braun",
+            "gender": "woman"
+        },
+        {
+            "id": 7,
+            "name": "Ralf Hammerschmidt",
+            "gender": "man"
+        },
+        {
+            "id": 8,
+            "name": "Philipp Hammerschmidt",
+            "gender": "man"
+        },
+        {
+            "id": 9,
+            "name": "Kai Hammerschmidt",
+            "gender": "man"
+        },
+        {
+            "id": 10,
+            "name": "Denise Bücken",
+            "gender": "woman"
+        },
+        {
+            "id": 11,
+            "name": "Marlon",
+            "gender": "man"
+        },
+        {
+            "id": 12,
+            "name": "Katharina geb. van Afferden",
+            "gender": "woman"
+        },
+        {
+            "id": 13,
+            "name": "Willibald Schürgers",
+            "gender": "man"
         }
     ],
     "connections": [
@@ -26,6 +76,26 @@
             "partner1Id": 0,
             "partner2Id": 1,
             "childrenIds": [2, 3] 
+        },
+        {
+            "partner1Id": 4,
+            "partner2Id": 5,
+            "childrenIds": [0,6] 
+        },        
+        {
+            "partner1Id": 6,
+            "partner2Id": 7,
+            "childrenIds": [8,9] 
+        },
+        {
+            "partner1Id": 8,
+            "partner2Id": 10,
+            "childrenIds": [11] 
+        },
+        {
+            "partner1Id": 12,
+            "partner2Id": 13,
+            "childrenIds": [4] 
         }
         
     ]
