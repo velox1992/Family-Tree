@@ -1,7 +1,7 @@
 class Person {
   constructor(id, name, gender) {
-    this.connection;
-    this.parentConnection;
+    this.connection = undefined;
+    this.parentConnection = undefined;
     this.id = id;
     this.name = name;
     this.gender = gender;
@@ -17,73 +17,101 @@ class Person {
 }
 
 class Connection {
-  constructor(partner1Id, partner2Id, childrenIds) {
-    this.partner1Id = partner1Id;
-    this.partner2Id = partner2Id;
-    this.childrenIds = childrenIds;
+  constructor(partner1, partner2) {
+    this.partner1 = partner1;
+    this.partner2 = partner2;
   }
 }
 
 class Family {
-    constructor(){
-        this.persons = [];
-        this.connections = [];
-    }
+  constructor() {
+    this.persons = [];
+    this.connections = [];
+  }
 
-    addFamilyMember(person){
-        this.persons.push(person);
-    }
+  addFamilyMember(member) {
+    this.persons.push(member);
+  }
 
-    addConnection(connection){
-        this.connections.push(connection);
-    }
+  setFamilyMembers(members) {
+    this.persons = members;
+  }
+
+  addConnection(connection) {
+    this.connections.push(connection);
+  }
 }
 
-class FamilyBuilder{
-    constructor(family){
-        this.family = family;
+class FamilyBuilder {
+  constructor() {
+    this.family;
+  }
+
+  importFamilyData(jsonPath) {
+    this.family = new Family();
+    var hFamilyData = require(jsonPath);
+
+    var hFamilyMembers = this.getFamilyMembers(hFamilyData.persons);
+    this.family.setFamilyMembers(hFamilyMembers);
+
+    this.createConnections(hFamilyData.connections);
+
+    return this.family;
+  }
+
+  getFamilyMembers(familyMember) {
+    // Sortiert damit ich über den ArrayIndex zugreifen kann. Hier wäre ein Dictionary wesentlich schöner
+    var hFamilyMember = familyMember.sort(this.comparePersonsByIdAsc);
+
+    var hFamilyMembers = [];
+    hFamilyMember.forEach(member => {
+      hFamilyMembers.push(new Person(member.id, member.name, member.gender));
+    });
+
+    return hFamilyMembers;
+  }
+
+  comparePersonsByIdAsc(a, b) {
+    if (a.id < b.id) {
+      return -1;
     }
-
-    importFamilyData(){
-        var hFamilyData = require("./FamilyData.json")
-
-        // Sortiert damit ich über den ArrayIndex zugreifen kann. Hier wäre ein Dictionary wesentlich schöner
-        var hFamilyMember = hFamilyData.persons.sort(this.comparePersons)
-
-        hFamilyMember.forEach(member => {
-            this.createFamilyMember(member.id, member.name, member.gender);
-        });
-
-        var hConnections = hFamilyData.connections;
-        hConnections.forEach(connection => {
-            this.createConnection(connection.partner1Id, connection.partner2Id, connection.childrenIds)
-        });
+    if (a.id > b.id) {
+      return 1;
     }
+    return 0;
+  }
 
-    comparePersons(a,b){
-        if (a.id < b.id){
-            return -1;
-        }
-        if (a.id > b.id){
-            return 1;
-        }
-        return 0;
-    }
+  createConnections(connections) {
+    // Die Familienmitglieder wurden eingelesen
+    // Jetzt müssen die Verbindungen erstellt werden und mit Infos gefüllt werden
+    // In diesem Zuge bekommen auf die jeweiligen Mitglieder einen Verweis auf die Verbindung gesetzt
+    connections.forEach(connection => {
+      var hPartner1 = this.family.persons[connection.partner1Id];
+      var hPartner2 = this.family.persons[connection.partner2Id];
 
-    createFamilyMember(id, name, gender){
-        var hNewFamilyMember = new Person(id, name, gender);
-        this.family.addFamilyMember(hNewFamilyMember);
-    }
+      var hNewConnection = new Connection(hPartner1, hPartner2);
+      hPartner1.connection = hNewConnection;
+      hPartner2.connection = hNewConnection;
 
-    createConnection(partner1Id, partner2Id, childrenIds){
-        var hNewConnection = new Connection(partner1Id, partner2Id, childrenIds);
-        this.family.addConnection(hNewConnection);
-    }
+      var hChildrenOfConnection = [];
+
+      connection.childrenIds.forEach(childrenId => {
+        var hChild = this.family.persons[childrenId];
+        hChildrenOfConnection.push(hChild);
+
+        // Kind bekommt direkt einen Verweis auf die elterliche Verbindung
+        hChild.setParentConnection(hNewConnection);
+      });
+
+      hNewConnection.children = hChildrenOfConnection;
+
+      this.family.addConnection(hNewConnection);
+    });
+  }
 }
 
-var hFamilieBraun = new Family();
-var hFamilyBuilder = new FamilyBuilder(hFamilieBraun);
-hFamilyBuilder.importFamilyData();
+
+var hFamilyBuilder = new FamilyBuilder();
+var hFamilieBraun = hFamilyBuilder.importFamilyData("./FamilyData.json");
 console.log(hFamilieBraun.persons);
 console.log(hFamilieBraun.connections);
-

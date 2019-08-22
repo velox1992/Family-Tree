@@ -23,9 +23,9 @@
     ],
     "connections": [
         {
-            "partner1Id": 1,
-            "partner2Id": 2,
-            "childrenIds": [3, 4] 
+            "partner1Id": 0,
+            "partner2Id": 1,
+            "childrenIds": [2, 3] 
         }
         
     ]
