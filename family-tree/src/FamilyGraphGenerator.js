@@ -22,11 +22,11 @@ class Connection {
     this.partner2 = partner2;
   }
 
-  getPartner(person){
-      if (this.partner1 === person ){
-          return this.partner2;
-      }
-      return this.partner1;
+  getPartner(person) {
+    if (this.partner1 === person) {
+      return this.partner2;
+    }
+    return this.partner1;
   }
 }
 
@@ -48,46 +48,58 @@ class Family {
     this.connections.push(connection);
   }
 
-  createGraphData(){
-      var hGraph = [];
-      var hRootPerson = this.persons[0];
-      var hNewPerson = {
-          "name": hRootPerson.name,
-          "class": hRootPerson.gender
-      }
+  createGraphData() {
+    var hGraph = [];
 
-      if (hRootPerson.connection !== undefined){
-          // Partner ermitteln
-          var hPartner = hRootPerson.connection.getPartner(hRootPerson);
-          var hNewPartner = {
-              "name": hPartner.name,
-              "class": hPartner.gender
-          }
-          
-          var hChildren = [];
-          // Kinder ermitteln
-          hRootPerson.connection.children.forEach(child => {
-              var hNewChild = {
-                "name": child.name,
-                "class": child.gender            
-              }
-              hChildren.push(hNewChild);
-          })
+    var hPeronStructure = this.generatePersonStructure(this.persons[0]);
+    hGraph.push(hPeronStructure);
 
+    console.log(JSON.stringify(hGraph));
 
-          hNewPerson["marriages"] = [{
-              "spouse": hNewPartner,
-              "children": hChildren
-          }] ;
+    return hGraph;
+  }
 
-      }
+  // Die benötigte Repräsentation einer Person generieren
+  generatePersonStructure(person) {
+    var hPersonObject = {
+      name: person.name,
+      class: person.gender
+    };
 
-      hGraph.push(hNewPerson);
+    // Hat die Person eine Verbindung?
+    if (person.connection !== undefined) {
+      // Partner ermitteln
+      var hPartner = person.connection.getPartner(person);
+      var hPartnerObject = {
+        name: hPartner.name,
+        class: hPartner.gender
+      };
 
-      console.log(JSON.stringify(hGraph));
+      // Kinder ermitteln
+      var hChildren = [];
+      person.connection.children.forEach(child => {
+        // Nun wird das jeweilige Kind und dessen Daten und Beziehungen analysiert (rekursiv)
+        // Das Ergebnis des resultierenden Teilbaums wird hier in die Datenstruktur hinzugefügt.
+        var hChildData = this.generatePersonStructure(child);
+        /*
+            var hChildObject = {
+            name: child.name,
+            class: child.gender
+          };*/
 
-      return hGraph;
+        hChildren.push(hChildData);
+      });
 
+      // In der aktuellen Person noch diese Verbindungsinformmationen hinterlegen
+      hPersonObject["marriages"] = [
+        {
+          spouse: hPartnerObject,
+          children: hChildren
+        }
+      ];
+    }
+
+    return hPersonObject;
   }
 }
 
@@ -158,19 +170,19 @@ class FamilyBuilder {
     });
   }
 
-  getFamilyData(){
-      var hFamily = this.importFamilyData()
-      return hFamily.createGraphData();
+  getFamilyData() {
+    var hFamily = this.importFamilyData();
+    return hFamily.createGraphData();
   }
 }
 
-/*
+
 var hFamilyBuilder = new FamilyBuilder();
 var hFamilieBraun = hFamilyBuilder.importFamilyData();
 console.log(hFamilieBraun.persons);
 console.log(hFamilieBraun.connections);
 
 hFamilieBraun.createGraphData();
-*/
+
 
 export default FamilyBuilder;
