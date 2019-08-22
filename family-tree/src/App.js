@@ -7,12 +7,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import FamilyGraphGenerator from "./FamilyGraphGenerator";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: require("./familyRelations.json")
+      familyRelations: (new FamilyGraphGenerator()).getFamilyData()
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);

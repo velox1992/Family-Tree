@@ -23,7 +23,7 @@ class Connection {
   }
 
   getPartner(person){
-      if (this.partner1 == person ){
+      if (this.partner1 === person ){
           return this.partner2;
       }
       return this.partner1;
@@ -77,7 +77,7 @@ class Family {
 
           hNewPerson["marriages"] = [{
               "spouse": hNewPartner,
-              "children": [hChildren]
+              "children": hChildren
           }] ;
 
       }
@@ -86,19 +86,19 @@ class Family {
 
       console.log(JSON.stringify(hGraph));
 
-
+      return hGraph;
 
   }
 }
 
 class FamilyBuilder {
   constructor() {
-    this.family;
+    this.family = undefined;
   }
 
-  importFamilyData(jsonPath) {
+  importFamilyData() {
     this.family = new Family();
-    var hFamilyData = require(jsonPath);
+    var hFamilyData = require("./FamilyData.json");
 
     var hFamilyMembers = this.getFamilyMembers(hFamilyData.persons);
     this.family.setFamilyMembers(hFamilyMembers);
@@ -157,12 +157,20 @@ class FamilyBuilder {
       this.family.addConnection(hNewConnection);
     });
   }
+
+  getFamilyData(){
+      var hFamily = this.importFamilyData()
+      return hFamily.createGraphData();
+  }
 }
 
-
+/*
 var hFamilyBuilder = new FamilyBuilder();
-var hFamilieBraun = hFamilyBuilder.importFamilyData("./FamilyData.json");
+var hFamilieBraun = hFamilyBuilder.importFamilyData();
 console.log(hFamilieBraun.persons);
 console.log(hFamilieBraun.connections);
 
 hFamilieBraun.createGraphData();
+*/
+
+export default FamilyBuilder;

@@ -3,22 +3,22 @@
         {
             "id": 0,
             "name": "Otmar Braun",
-            "gender": "male"
+            "gender": "man"
         },
         {
             "id": 1,
             "name": "Renate geb. Rosarius",
-            "gender": "female"
+            "gender": "woman"
         },
         {
             "id": 2,
             "name": "Karina Braun",
-            "gender": "female"
+            "gender": "woman"
         },
         {
             "id": 3,
             "name": "Georg Braun",
-            "gender": "male"
+            "gender": "man"
         }
     ],
     "connections": [
