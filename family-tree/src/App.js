@@ -13,15 +13,19 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: (new FamilyGraphGenerator()).getFamilyData()
+      familyRelations: (new FamilyGraphGenerator()).generate(16)
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);
+    this.handleNodeClick = this.handleNodeClick.bind(this);
   }
 
   handleJsonValueChange(event) {
-    console.log("handleJsonValueChange");
     this.setState({ familyRelations: event.jsObject });
+  }
+
+  handleNodeClick(name, extras){
+    this.setState({ familyRelations: (new FamilyGraphGenerator()).generate(extras.id)})
   }
 
   render() {
@@ -39,8 +43,6 @@ class App extends React.Component {
       />
     );
 
-    console.log(hJsonEditor);
-
     return (
       <>
         <Container>
@@ -54,7 +56,7 @@ class App extends React.Component {
           <Row>
             <Col>
               <div className="center-text">
-                <FamilyGraph data={this.state.familyRelations} />
+                <FamilyGraph data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
               </div>
             </Col>
           </Row>

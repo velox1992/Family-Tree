@@ -34,6 +34,7 @@ class Family {
   constructor() {
     this.persons = [];
     this.connections = [];
+    this.marriageNodeIds = [];
   }
 
   addFamilyMember(member) {
@@ -48,13 +49,29 @@ class Family {
     this.connections.push(connection);
   }
 
-  createGraphData() {
+  createGraph(rootId) {
+
+    // Handelt es sich bei der Id schon um den "höchsten" Root?
+    // Solange die Eltern-Beziehungen "hochlaufen" bis es keine Eltern mehr gibt
+    var hIsAbsoluteRoot = false;
+    var hAbsoluteRootId = rootId;
+    var hCurrentPerson = this.persons[rootId];
+    while (!hIsAbsoluteRoot){
+        if (hCurrentPerson.parentConnection !== undefined){
+            var hParent = hCurrentPerson.parentConnection.partner1;
+            hCurrentPerson = hParent;
+        } 
+        else {
+            hIsAbsoluteRoot = true;
+            hAbsoluteRootId = hCurrentPerson.id;
+        }
+    }
+
     var hGraph = [];
 
-    var hPeronStructure = this.generatePersonStructure(this.persons[16]);
+    var hPeronStructure = this.generatePersonStructure(this.persons[hAbsoluteRootId]);
     hGraph.push(hPeronStructure);
 
-    console.log(JSON.stringify(hGraph));
 
     return hGraph;
   }
@@ -63,17 +80,29 @@ class Family {
   generatePersonStructure(person) {
     var hPersonObject = {
       name: person.name,
-      class: person.gender
+      class: person.gender,
+      extra: {
+        id: person.id
+      }
     };
 
     // Hat die Person eine Verbindung?
     if (person.connection !== undefined) {
       // Partner ermitteln
       var hPartner = person.connection.getPartner(person);
+      // Hat der Partner auch noch parent Informationen? Dann ist dort noch ein alternativer Root möglich und soll visuell markiert werden
+      var genderClass = hPartner.gender;
+      if (hPartner.parentConnection !== undefined) {
+        genderClass += "-alternativeRoot";
+      }
       var hPartnerObject = {
         name: hPartner.name,
-        class: hPartner.gender
+        class: genderClass,
+        extra: {
+            id: hPartner.id
+          }
       };
+
 
       // Kinder ermitteln
       var hChildren = [];
@@ -81,12 +110,6 @@ class Family {
         // Nun wird das jeweilige Kind und dessen Daten und Beziehungen analysiert (rekursiv)
         // Das Ergebnis des resultierenden Teilbaums wird hier in die Datenstruktur hinzugefügt.
         var hChildData = this.generatePersonStructure(child);
-        /*
-            var hChildObject = {
-            name: child.name,
-            class: child.gender
-          };*/
-
         hChildren.push(hChildData);
       });
 
@@ -170,19 +193,14 @@ class FamilyBuilder {
     });
   }
 
-  getFamilyData() {
+  generate(rootId) {
     var hFamily = this.importFamilyData();
-    return hFamily.createGraphData();
+    return hFamily.createGraph(rootId);
   }
 }
 
 
-var hFamilyBuilder = new FamilyBuilder();
-var hFamilieBraun = hFamilyBuilder.importFamilyData();
-console.log(hFamilieBraun.persons);
-console.log(hFamilieBraun.connections);
-
-hFamilieBraun.createGraphData();
+new FamilyBuilder().generate(0);
 
 
 export default FamilyBuilder;

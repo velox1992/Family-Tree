@@ -11,24 +11,25 @@ class FamilyGraph extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log("componentDidUpdate");
-    console.log(this.props.data);
     if (this.props.data !== undefined) {
       this.renderGraph(this.props.data);
     }
   }
 
   render() {
+    
     return <div id="graph"/>;
   }
 
   renderGraph(data) {
+
     const options = {
       target: "#graph",
       debug: false,
       width: 800,
       height: 400,
       callbacks: {
+        nodeClick: this.props.onNodeClick 
       },
       margin: {
         top: 0,
