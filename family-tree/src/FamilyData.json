@@ -69,6 +69,26 @@
             "id": 13,
             "name": "Willibald Schürgers",
             "gender": "man"
+        },
+        {
+            "id": 14,
+            "name": "Adelheid geb. Beckers",
+            "gender": "woman"
+        },
+        {
+            "id": 15,
+            "name": "Hubert von Afferden",
+            "gender": "man"
+        },
+        {
+            "id": 16,
+            "name": "Sophia Schumacher",
+            "gender": "woman"
+        },
+        {
+            "id": 17,
+            "name": "Christian Schürgers",
+            "gender": "man"
         }
     ],
     "connections": [
@@ -96,6 +116,16 @@
             "partner1Id": 12,
             "partner2Id": 13,
             "childrenIds": [4] 
+        },
+        {
+            "partner1Id": 14,
+            "partner2Id": 15,
+            "childrenIds": [12] 
+        },
+        {
+            "partner1Id": 16,
+            "partner2Id": 17,
+            "childrenIds": [13] 
         }
         
     ]

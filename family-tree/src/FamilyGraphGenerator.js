@@ -51,7 +51,7 @@ class Family {
   createGraphData() {
     var hGraph = [];
 
-    var hPeronStructure = this.generatePersonStructure(this.persons[12]);
+    var hPeronStructure = this.generatePersonStructure(this.persons[16]);
     hGraph.push(hPeronStructure);
 
     console.log(JSON.stringify(hGraph));
