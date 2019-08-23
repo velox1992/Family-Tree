@@ -89,6 +89,16 @@
             "id": 17,
             "name": "Christian Schürgers",
             "gender": "man"
+        },
+        {
+            "id": 18,
+            "name": "Kurt Roarius",
+            "gender": "man"
+        },
+        {
+            "id": 19,
+            "name": "",
+            "gender": "woman"
         }
     ],
     "connections": [
@@ -126,6 +136,12 @@
             "partner1Id": 16,
             "partner2Id": 17,
             "childrenIds": [13] 
+        }
+        ,
+        {
+            "partner1Id": 18,
+            "partner2Id": 19,
+            "childrenIds": [1] 
         }
         
     ]
