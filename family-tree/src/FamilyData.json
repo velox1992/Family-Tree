@@ -92,12 +92,172 @@
         },
         {
             "id": 18,
-            "name": "Kurt Roarius",
+            "name": "Kurt Rosarius",
             "gender": "man"
         },
         {
             "id": 19,
             "name": "",
+            "gender": "woman"
+        },
+        {
+            "id": 20,
+            "name": "Achim Braun",
+            "gender": "man"
+        },
+        {
+            "id": 21,
+            "name": "Beate geb. Schepp",
+            "gender": "woman"
+        },
+        {
+            "id": 22,
+            "name": "Christine geb. Peters",
+            "gender": "woman"
+        },
+        {
+            "id": 23,
+            "name": "Ralph Drechsler",
+            "gender": "man"
+        },
+        {
+            "id": 24,
+            "name": "Till",
+            "gender": "man"
+        },
+        {
+            "id": 25,
+            "name": "Barbara Braun",
+            "gender": "woman"
+        },
+        {
+            "id": 26,
+            "name": "Lars geb. Windmüller",
+            "gender": "man"
+        },
+        {
+            "id": 27,
+            "name": "Lasse",
+            "gender": "woman"
+        },
+        {
+            "id": 28,
+            "name": "Martha",
+            "gender": "woman"
+        },
+        {
+            "id": 29,
+            "name": "Annemarie geb. Braun",
+            "gender": "man"
+        },
+        {
+            "id": 30,
+            "name": "Sebastian Schmitz",
+            "gender": "man"
+        },
+        {
+            "id": 31,
+            "name": "Christa Braun",
+            "gender": "woman"
+        },
+        {
+            "id": 32,
+            "name": "Katja geb. Braun",
+            "gender": "woman"
+        },
+        {
+            "id": 33,
+            "name": "Dirk Semleit",
+            "gender": "man"
+        },
+        {
+            "id": 34,
+            "name": "Jana Semleit",
+            "gender": "woman"
+        },
+        {
+            "id": 35,
+            "name": "Thorsten Semleit",
+            "gender": "man"
+        },
+        {
+            "id": 36,
+            "name": "Marianne geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 37,
+            "name": "Hubert Verhülsdonk",
+            "gender": "man"
+        },
+        {
+            "id": 38,
+            "name": "Ludger Verhülsdonk",
+            "gender": "man"
+        },
+        {
+            "id": 39,
+            "name": "",
+            "gender": "woman"
+        },
+        {
+            "id": 40,
+            "name": "Martin",
+            "gender": "man"
+        },
+        {
+            "id": 41,
+            "name": "Christian",
+            "gender": "man"
+        },
+        {
+            "id": 42,
+            "name": "Anne",
+            "gender": "woman"
+        },
+        {
+            "id": 43,
+            "name": "Merle",
+            "gender": "woman"
+        },
+        {
+            "id": 44,
+            "name": "Ursula geb. Verhülsdonk",
+            "gender": "woman"
+        },
+        {
+            "id": 45,
+            "name": "Hans",
+            "gender": "man"
+        },
+        {
+            "id": 46,
+            "name": "Henry",
+            "gender": "man"
+        },
+        {
+            "id": 47,
+            "name": "Dieter Verhülsdonk",
+            "gender": "man"
+        },
+        {
+            "id": 48,
+            "name": "Elke geb. Schiwenk",
+            "gender": "woman"
+        },
+        {
+            "id": 49,
+            "name": "Sebastian",
+            "gender": "man"
+        },
+        {
+            "id": 50,
+            "name": "Florian",
+            "gender": "man"
+        },
+        {
+            "id": 51,
+            "name": "Lena",
             "gender": "woman"
         }
     ],
@@ -110,7 +270,7 @@
         {
             "partner1Id": 4,
             "partner2Id": 5,
-            "childrenIds": [0,6] 
+            "childrenIds": [0,6,20,31,32] 
         },        
         {
             "partner1Id": 6,
@@ -125,7 +285,7 @@
         {
             "partner1Id": 12,
             "partner2Id": 13,
-            "childrenIds": [4] 
+            "childrenIds": [4,36] 
         },
         {
             "partner1Id": 14,
@@ -142,6 +302,51 @@
             "partner1Id": 18,
             "partner2Id": 19,
             "childrenIds": [1] 
+        },
+        {
+            "partner1Id": 20,
+            "partner2Id": 21,
+            "childrenIds": [22,25,29] 
+        },
+        {
+            "partner1Id": 25,
+            "partner2Id": 26,
+            "childrenIds": [27, 28] 
+        },
+        {
+            "partner1Id": 22,
+            "partner2Id": 23,
+            "childrenIds": [24] 
+        },
+        {
+            "partner1Id": 29,
+            "partner2Id": 30,
+            "childrenIds": []
+        },
+        {
+            "partner1Id": 32,
+            "partner2Id": 33,
+            "childrenIds": [34,35]
+        },
+        {
+            "partner1Id": 36,
+            "partner2Id": 37,
+            "childrenIds": [38,44,47]
+        },
+        {
+            "partner1Id": 38,
+            "partner2Id": 39,
+            "childrenIds": [40,41,42,43]
+        },
+        {
+            "partner1Id": 44,
+            "partner2Id": 45,
+            "childrenIds": [46]
+        },
+        {
+            "partner1Id": 47,
+            "partner2Id": 48,
+            "childrenIds": [49,50,51]
         }
         
     ]
