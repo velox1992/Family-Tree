@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import FamilyTree from "./FamilyGraph.js";
+import FamilyDTree from "./FamilyDTree.js";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 import Container from "react-bootstrap/Container";
@@ -57,7 +57,7 @@ class App extends React.Component {
           <Row>
             <Col>
               <div className="center-text">
-                <FamilyTree data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
+                <FamilyDTree data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
               </div>
             </Col>
           </Row>

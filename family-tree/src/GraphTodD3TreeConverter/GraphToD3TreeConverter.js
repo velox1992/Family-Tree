@@ -10,7 +10,6 @@ function convert(graphData, rootId){
     var hFamily = previousFamily;
     
     if (graphData !== previousGraph){
-        console.log("New import!");
         var hImporter = new FamilyGraphImporter();
         hFamily = hImporter.import(graphData);      
 
