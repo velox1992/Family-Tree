@@ -1,19 +1,20 @@
 import React from "react";
 import "./App.css";
-import FamilyGraph from "./FamilyGraph.js";
+import FamilyTree from "./FamilyGraph.js";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import FamilyGraphGenerator from "./FamilyGraphGenerator";
+const GraphToD3TreeConverter = require("./GraphTodD3TreeConverter/GraphToD3TreeConverter");
+var FamilyGraph = require("./FamilyData.json");
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: (new FamilyGraphGenerator()).generate(16)
+      familyRelations: GraphToD3TreeConverter(FamilyGraph, 16)
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);
@@ -25,7 +26,7 @@ class App extends React.Component {
   }
 
   handleNodeClick(name, extras){
-    this.setState({ familyRelations: (new FamilyGraphGenerator()).generate(extras.id)})
+    this.setState({ familyRelations: GraphToD3TreeConverter(FamilyGraph, extras.id)})
   }
 
   render() {
@@ -56,7 +57,7 @@ class App extends React.Component {
           <Row>
             <Col>
               <div className="center-text">
-                <FamilyGraph data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
+                <FamilyTree data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
               </div>
             </Col>
           </Row>

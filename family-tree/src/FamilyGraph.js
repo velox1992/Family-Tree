@@ -3,7 +3,7 @@ import dTree from "d3-dtree";
 import "./FamilyGraph.css";
 import "jsoneditor-react/es/editor.min.css";
 
-class FamilyGraph extends React.Component {
+class FamilyTree extends React.Component {
   componentDidMount() {
     if (this.props.data !== undefined) {
       this.renderGraph(this.props.data);
@@ -54,4 +54,4 @@ class FamilyGraph extends React.Component {
   }
 }
 
-export default FamilyGraph;
+export default FamilyTree;
