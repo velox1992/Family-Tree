@@ -459,6 +459,176 @@
             "id": 91,
             "name": "Patrik Maes",
             "gender": "man"
+        },
+        {
+            "id": 92,
+            "name": "Norbert Schürgers",
+            "gender": "man"
+        },
+        {
+            "id": 93,
+            "name": "Katja geb. Kub",
+            "gender": "woman"
+        },
+        {
+            "id": 94,
+            "name": "Jana Marie Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 95,
+            "name": "Lukas Schürgers",
+            "gender": "man"
+        },
+        {
+            "id": 96,
+            "name": "Elke geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 97,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 98,
+            "name": "Stafanie",
+            "gender": "woman"
+        },
+        {
+            "id": 99,
+            "name": "Pascal",
+            "gender": "man"
+        },
+        {
+            "id": 100,
+            "name": "Hubert Schürgers",
+            "gender": "man"
+        },
+        {
+            "id": 101,
+            "name": "Lore geb. Lintsches",
+            "gender": "woman"
+        },
+        {
+            "id": 102,
+            "name": "Gisela geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 103,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 104,
+            "name": "Nicole",
+            "gender": "woman"
+        },
+        {
+            "id": 105,
+            "name": "Verena",
+            "gender": "woman"
+        },
+        {
+            "id": 113,
+            "name": "Adele geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 114,
+            "name": "Heinz Wieland",
+            "gender": "man"
+        },
+        {
+            "id": 115,
+            "name": "Peter Wieland",
+            "gender": "man"
+        },
+        {
+            "id": 116,
+            "name": "Robert Wieland",
+            "gender": "man"
+        },
+        {
+            "id": 117,
+            "name": "",
+            "gender": "woman"
+        },
+        {
+            "id": 118,
+            "name": "Feemina",
+            "gender": "woman"
+        },
+        {
+            "id": 119,
+            "name": "Florian",
+            "gender": "man"
+        },
+        {
+            "id": 120,
+            "name": "Annika",
+            "gender": "woman"
+        },
+        {
+            "id": 121,
+            "name": "Ruth gebi. Wieland",
+            "gender": "woman"
+        },
+        {
+            "id": 122,
+            "name": "Norbert Volmer",
+            "gender": "man"
+        },
+        {
+            "id": 123,
+            "name": "Stefanie",
+            "gender": "woman"
+        },
+        {
+            "id": 124,
+            "name": "Sebastian",
+            "gender": "man"
+        },
+        {
+            "id": 125,
+            "name": "Ulrich Wieland",
+            "gender": "man"
+        },
+        {
+            "id": 126,
+            "name": "Gaby geb. ?",
+            "gender": "woman"
+        },
+        {
+            "id": 127,
+            "name": "Heidi",
+            "gender": "woman"
+        },
+        {
+            "id": 128,
+            "name": "Claudia",
+            "gender": "woman"
+        },
+        {
+            "id": 129,
+            "name": "Beatrix geb. Wieland",
+            "gender": "woman"
+        },
+        {
+            "id": 130,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 131,
+            "name": "Sven",
+            "gender": "man"
+        },
+        {
+            "id": 132,
+            "name": "Melanie",
+            "gender": "woman"
         }
     ],
     "connections": [
@@ -485,7 +655,7 @@
         {
             "partner1Id": 12,
             "partner2Id": 13,
-            "childrenIds": [4,36,52,56,72,83,86] 
+            "childrenIds": [100,4,36,52,56,72,83,86] 
         },
         {
             "partner1Id": 14,
@@ -612,7 +782,29 @@
             "partner1Id": 88,
             "partner2Id": 89,
             "childrenIds": [90]
+        },
+        {
+            "partner1Id": 100,
+            "partner2Id": 101,
+            "childrenIds": [102,96,92]
+        },
+        {
+            "partner1Id": 102,
+            "partner2Id": 103,
+            "childrenIds": [104,105]
+        },
+        {
+            "partner1Id": 96,
+            "partner2Id": 97,
+            "childrenIds": [98,99]
         }
+        ,
+        {
+            "partner1Id": 92,
+            "partner2Id": 93,
+            "childrenIds": [94,95]
+        }
+       
         
     ]
 }
