@@ -1,810 +1,831 @@
 {
-    "persons": [
-        {
-            "id": 0,
-            "name": "Otmar Braun",
-            "gender": "man"
-        },
-        {
-            "id": 1,
-            "name": "Renate geb. Rosarius",
-            "gender": "woman"
-        },
-        {
-            "id": 2,
-            "name": "Karina Braun",
-            "gender": "woman"
-        },
-        {
-            "id": 3,
-            "name": "Georg Braun",
-            "gender": "man"
-        },
-        {
-            "id": 4,
-            "name": "Katharina geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 5,
-            "name": "Georg Braun",
-            "gender": "man"
-        },
-        {
-            "id": 6,
-            "name": "Sigrid geb. Braun",
-            "gender": "woman"
-        },
-        {
-            "id": 7,
-            "name": "Ralf Hammerschmidt",
-            "gender": "man"
-        },
-        {
-            "id": 8,
-            "name": "Philipp Hammerschmidt",
-            "gender": "man"
-        },
-        {
-            "id": 9,
-            "name": "Kai Hammerschmidt",
-            "gender": "man"
-        },
-        {
-            "id": 10,
-            "name": "Denise Bücken",
-            "gender": "woman"
-        },
-        {
-            "id": 11,
-            "name": "Marlon",
-            "gender": "man"
-        },
-        {
-            "id": 12,
-            "name": "Katharina geb. van Afferden",
-            "gender": "woman"
-        },
-        {
-            "id": 13,
-            "name": "Willibald Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 14,
-            "name": "Adelheid geb. Beckers",
-            "gender": "woman"
-        },
-        {
-            "id": 15,
-            "name": "Hubert von Afferden",
-            "gender": "man"
-        },
-        {
-            "id": 16,
-            "name": "Sophia Schumacher",
-            "gender": "woman"
-        },
-        {
-            "id": 17,
-            "name": "Christian Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 18,
-            "name": "Kurt Rosarius",
-            "gender": "man"
-        },
-        {
-            "id": 19,
-            "name": "",
-            "gender": "woman"
-        },
-        {
-            "id": 20,
-            "name": "Achim Braun",
-            "gender": "man"
-        },
-        {
-            "id": 21,
-            "name": "Beate geb. Schepp",
-            "gender": "woman"
-        },
-        {
-            "id": 22,
-            "name": "Christine geb. Peters",
-            "gender": "woman"
-        },
-        {
-            "id": 23,
-            "name": "Ralph Drechsler",
-            "gender": "man"
-        },
-        {
-            "id": 24,
-            "name": "Till",
-            "gender": "man"
-        },
-        {
-            "id": 25,
-            "name": "Barbara Braun",
-            "gender": "woman"
-        },
-        {
-            "id": 26,
-            "name": "Lars geb. Windmüller",
-            "gender": "man"
-        },
-        {
-            "id": 27,
-            "name": "Lasse",
-            "gender": "woman"
-        },
-        {
-            "id": 28,
-            "name": "Martha",
-            "gender": "woman"
-        },
-        {
-            "id": 29,
-            "name": "Annemarie geb. Braun",
-            "gender": "man"
-        },
-        {
-            "id": 30,
-            "name": "Sebastian Schmitz",
-            "gender": "man"
-        },
-        {
-            "id": 31,
-            "name": "Christa Braun",
-            "gender": "woman"
-        },
-        {
-            "id": 32,
-            "name": "Katja geb. Braun",
-            "gender": "woman"
-        },
-        {
-            "id": 33,
-            "name": "Dirk Semleit",
-            "gender": "man"
-        },
-        {
-            "id": 34,
-            "name": "Jana Semleit",
-            "gender": "woman"
-        },
-        {
-            "id": 35,
-            "name": "Thorsten Semleit",
-            "gender": "man"
-        },
-        {
-            "id": 36,
-            "name": "Marianne geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 37,
-            "name": "Hubert Verhülsdonk",
-            "gender": "man"
-        },
-        {
-            "id": 38,
-            "name": "Ludger Verhülsdonk",
-            "gender": "man"
-        },
-        {
-            "id": 39,
-            "name": "",
-            "gender": "woman"
-        },
-        {
-            "id": 40,
-            "name": "Martin",
-            "gender": "man"
-        },
-        {
-            "id": 41,
-            "name": "Christian",
-            "gender": "man"
-        },
-        {
-            "id": 42,
-            "name": "Anne",
-            "gender": "woman"
-        },
-        {
-            "id": 43,
-            "name": "Merle",
-            "gender": "woman"
-        },
-        {
-            "id": 44,
-            "name": "Ursula geb. Verhülsdonk",
-            "gender": "woman"
-        },
-        {
-            "id": 45,
-            "name": "Hans",
-            "gender": "man"
-        },
-        {
-            "id": 46,
-            "name": "Henry",
-            "gender": "man"
-        },
-        {
-            "id": 47,
-            "name": "Dieter Verhülsdonk",
-            "gender": "man"
-        },
-        {
-            "id": 48,
-            "name": "Elke geb. Schiwenk",
-            "gender": "woman"
-        },
-        {
-            "id": 49,
-            "name": "Sebastian",
-            "gender": "man"
-        },
-        {
-            "id": 50,
-            "name": "Florian",
-            "gender": "man"
-        },
-        {
-            "id": 51,
-            "name": "Lena",
-            "gender": "woman"
-        },
-        {
-            "id": 52,
-            "name": "Elsi geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 53,
-            "name": "Peter Velten",
-            "gender": "man"
-        },
-        {
-            "id": 54,
-            "name": "Karin Velten",
-            "gender": "woman"
-        },
-        {
-            "id": 55,
-            "name": "Rainer geb. Bock",
-            "gender": "man"
-        },
-        {
-            "id": 56,
-            "name": "Hildegard geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 57,
-            "name": "Horst Hegger",
-            "gender": "man"
-        },
-        {
-            "id": 58,
-            "name": "Sabine geb. Hegger",
-            "gender": "woman"
-        },
-        {
-            "id": 59,
-            "name": "Henne Dammer",
-            "gender": "man"
-        },
-        {
-            "id": 60,
-            "name": "Jutta geb. Hegger",
-            "gender": "woman"
-        },
-        {
-            "id": 61,
-            "name": "Raimung Pogcsz",
-            "gender": "man"
-        },
-        {
-            "id": 62,
-            "name": "Lara",
-            "gender": "woman"
-        },
-        {
-            "id": 63,
-            "name": "Dagmar geb. Hegger",
-            "gender": "woman"
-        },
-        {
-            "id": 64,
-            "name": "? Schmidt",
-            "gender": "man"
-        },
-        {
-            "id": 65,
-            "name": "Lisa",
-            "gender": "woman"
-        },
-        {
-            "id": 66,
-            "name": "Toni",
-            "gender": "man"
-        },
-        {
-            "id": 67,
-            "name": "Felix",
-            "gender": "man"
-        },
-        {
-            "id": 68,
-            "name": "Karina geb. Hegger",
-            "gender": "woman"
-        },
-        {
-            "id": 69,
-            "name": "Andreas Lind",
-            "gender": "man"
-        },
-        {
-            "id": 70,
-            "name": "Emma",
-            "gender": "woman"
-        },
-        {
-            "id": 71,
-            "name": "Madita",
-            "gender": "woman"
-        },
-        {
-            "id": 72,
-            "name": "Günther Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 73,
-            "name": "Nelly Liedges",
-            "gender": "woman"
-        },
-        {
-            "id": 74,
-            "name": "Jan Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 75,
-            "name": "",
-            "gender": "woman"
-        },
-        {
-            "id": 76,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 77,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 78,
-            "name": "Marion geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 79,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 80,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 81,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 82,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 83,
-            "name": "Kläre geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 84,
-            "name": "Franz Behet",
-            "gender": "man"
-        },
-        {
-            "id": 85,
-            "name": "Frank Behet",
-            "gender": "man"
-        },
-        {
-            "id": 86,
-            "name": "Ria geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 87,
-            "name": "Heinz Maes",
-            "gender": "man"
-        },
-        {
-            "id": 88,
-            "name": "Markus Maes",
-            "gender": "man"
-        },
-        {
-            "id": 89,
-            "name": "Angela geb. Beckedahl",
-            "gender": "woman"
-        },
-        {
-            "id": 90,
-            "name": "Julia",
-            "gender": "woman"
-        },
-        {
-            "id": 91,
-            "name": "Patrik Maes",
-            "gender": "man"
-        },
-        {
-            "id": 92,
-            "name": "Norbert Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 93,
-            "name": "Katja geb. Kub",
-            "gender": "woman"
-        },
-        {
-            "id": 94,
-            "name": "Jana Marie Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 95,
-            "name": "Lukas Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 96,
-            "name": "Elke geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 97,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 98,
-            "name": "Stafanie",
-            "gender": "woman"
-        },
-        {
-            "id": 99,
-            "name": "Pascal",
-            "gender": "man"
-        },
-        {
-            "id": 100,
-            "name": "Hubert Schürgers",
-            "gender": "man"
-        },
-        {
-            "id": 101,
-            "name": "Lore geb. Lintsches",
-            "gender": "woman"
-        },
-        {
-            "id": 102,
-            "name": "Gisela geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 103,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 104,
-            "name": "Nicole",
-            "gender": "woman"
-        },
-        {
-            "id": 105,
-            "name": "Verena",
-            "gender": "woman"
-        },
-        {
-            "id": 113,
-            "name": "Adele geb. Schürgers",
-            "gender": "woman"
-        },
-        {
-            "id": 114,
-            "name": "Heinz Wieland",
-            "gender": "man"
-        },
-        {
-            "id": 115,
-            "name": "Peter Wieland",
-            "gender": "man"
-        },
-        {
-            "id": 116,
-            "name": "Robert Wieland",
-            "gender": "man"
-        },
-        {
-            "id": 117,
-            "name": "",
-            "gender": "woman"
-        },
-        {
-            "id": 118,
-            "name": "Feemina",
-            "gender": "woman"
-        },
-        {
-            "id": 119,
-            "name": "Florian",
-            "gender": "man"
-        },
-        {
-            "id": 120,
-            "name": "Annika",
-            "gender": "woman"
-        },
-        {
-            "id": 121,
-            "name": "Ruth gebi. Wieland",
-            "gender": "woman"
-        },
-        {
-            "id": 122,
-            "name": "Norbert Volmer",
-            "gender": "man"
-        },
-        {
-            "id": 123,
-            "name": "Stefanie",
-            "gender": "woman"
-        },
-        {
-            "id": 124,
-            "name": "Sebastian",
-            "gender": "man"
-        },
-        {
-            "id": 125,
-            "name": "Ulrich Wieland",
-            "gender": "man"
-        },
-        {
-            "id": 126,
-            "name": "Gaby geb. ?",
-            "gender": "woman"
-        },
-        {
-            "id": 127,
-            "name": "Heidi",
-            "gender": "woman"
-        },
-        {
-            "id": 128,
-            "name": "Claudia",
-            "gender": "woman"
-        },
-        {
-            "id": 129,
-            "name": "Beatrix geb. Wieland",
-            "gender": "woman"
-        },
-        {
-            "id": 130,
-            "name": "",
-            "gender": "man"
-        },
-        {
-            "id": 131,
-            "name": "Sven",
-            "gender": "man"
-        },
-        {
-            "id": 132,
-            "name": "Melanie",
-            "gender": "woman"
-        }
-    ],
-    "connections": [
-        {
-            "partner1Id": 0,
-            "partner2Id": 1,
-            "childrenIds": [2, 3] 
-        },
-        {
-            "partner1Id": 4,
-            "partner2Id": 5,
-            "childrenIds": [0,6,20,31,32] 
-        },        
-        {
-            "partner1Id": 6,
-            "partner2Id": 7,
-            "childrenIds": [8,9] 
-        },
-        {
-            "partner1Id": 8,
-            "partner2Id": 10,
-            "childrenIds": [11] 
-        },
-        {
-            "partner1Id": 12,
-            "partner2Id": 13,
-            "childrenIds": [100,4,36,52,56,72,83,86] 
-        },
-        {
-            "partner1Id": 14,
-            "partner2Id": 15,
-            "childrenIds": [12] 
-        },
-        {
-            "partner1Id": 16,
-            "partner2Id": 17,
-            "childrenIds": [13] 
-        }
-        ,
-        {
-            "partner1Id": 18,
-            "partner2Id": 19,
-            "childrenIds": [1] 
-        },
-        {
-            "partner1Id": 20,
-            "partner2Id": 21,
-            "childrenIds": [22,25,29] 
-        },
-        {
-            "partner1Id": 25,
-            "partner2Id": 26,
-            "childrenIds": [27, 28] 
-        },
-        {
-            "partner1Id": 22,
-            "partner2Id": 23,
-            "childrenIds": [24] 
-        },
-        {
-            "partner1Id": 29,
-            "partner2Id": 30,
-            "childrenIds": []
-        },
-        {
-            "partner1Id": 32,
-            "partner2Id": 33,
-            "childrenIds": [34,35]
-        },
-        {
-            "partner1Id": 36,
-            "partner2Id": 37,
-            "childrenIds": [38,44,47]
-        },
-        {
-            "partner1Id": 38,
-            "partner2Id": 39,
-            "childrenIds": [40,41,42,43]
-        },
-        {
-            "partner1Id": 44,
-            "partner2Id": 45,
-            "childrenIds": [46]
-        },
-        {
-            "partner1Id": 47,
-            "partner2Id": 48,
-            "childrenIds": [49,50,51]
-        },
-        {
-            "partner1Id": 52,
-            "partner2Id": 53,
-            "childrenIds": [54]
-        },
-        {
-            "partner1Id": 54,
-            "partner2Id": 55,
-            "childrenIds": []
-        },
-        {
-            "partner1Id": 56,
-            "partner2Id": 57,
-            "childrenIds": [58,60,63,68]
-        },
-        {
-            "partner1Id": 58,
-            "partner2Id": 59,
-            "childrenIds": []
-        },
-        {
-            "partner1Id": 60,
-            "partner2Id": 61,
-            "childrenIds": [62]
-        },
-        {
-            "partner1Id": 63,
-            "partner2Id": 64,
-            "childrenIds": [65,66,67]
-        },
-        {
-            "partner1Id": 68,
-            "partner2Id": 69,
-            "childrenIds": [70,71]
-        },
-        {
-            "partner1Id": 72,
-            "partner2Id": 73,
-            "childrenIds": [74,78]
-        },
-        {
-            "partner1Id": 74,
-            "partner2Id": 75,
-            "childrenIds": [76,77]
-        },
-        {
-            "partner1Id": 78,
-            "partner2Id": 79,
-            "childrenIds": [80,81,82]
-        },
-        {
-            "partner1Id": 83,
-            "partner2Id": 84,
-            "childrenIds": [85]
-        },
-        {
-            "partner1Id": 86,
-            "partner2Id": 87,
-            "childrenIds": [88,91]
-        },
-        {
-            "partner1Id": 88,
-            "partner2Id": 89,
-            "childrenIds": [90]
-        },
-        {
-            "partner1Id": 100,
-            "partner2Id": 101,
-            "childrenIds": [102,96,92]
-        },
-        {
-            "partner1Id": 102,
-            "partner2Id": 103,
-            "childrenIds": [104,105]
-        },
-        {
-            "partner1Id": 96,
-            "partner2Id": 97,
-            "childrenIds": [98,99]
-        }
-        ,
-        {
-            "partner1Id": 92,
-            "partner2Id": 93,
-            "childrenIds": [94,95]
-        }
-       
-        
-    ]
+  "persons": [
+    {
+      "id": 0,
+      "name": "Otmar Braun",
+      "gender": "man"
+    },
+    {
+      "id": 1,
+      "name": "Renate geb. Rosarius",
+      "gender": "woman"
+    },
+    {
+      "id": 2,
+      "name": "Karina Braun",
+      "gender": "woman"
+    },
+    {
+      "id": 3,
+      "name": "Georg Braun",
+      "gender": "man"
+    },
+    {
+      "id": 4,
+      "name": "Katharina geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 5,
+      "name": "Georg Braun",
+      "gender": "man"
+    },
+    {
+      "id": 6,
+      "name": "Sigrid geb. Braun",
+      "gender": "woman"
+    },
+    {
+      "id": 7,
+      "name": "Ralf Hammerschmidt",
+      "gender": "man"
+    },
+    {
+      "id": 8,
+      "name": "Philipp Hammerschmidt",
+      "gender": "man"
+    },
+    {
+      "id": 9,
+      "name": "Kai Hammerschmidt",
+      "gender": "man"
+    },
+    {
+      "id": 10,
+      "name": "Denise Bücken",
+      "gender": "woman"
+    },
+    {
+      "id": 11,
+      "name": "Marlon",
+      "gender": "man"
+    },
+    {
+      "id": 12,
+      "name": "Katharina geb. van Afferden",
+      "gender": "woman"
+    },
+    {
+      "id": 13,
+      "name": "Willibald Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 14,
+      "name": "Adelheid geb. Beckers",
+      "gender": "woman"
+    },
+    {
+      "id": 15,
+      "name": "Hubert von Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 16,
+      "name": "Sophia Schumacher",
+      "gender": "woman"
+    },
+    {
+      "id": 17,
+      "name": "Christian Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 18,
+      "name": "Kurt Rosarius",
+      "gender": "man"
+    },
+    {
+      "id": 19,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 20,
+      "name": "Achim Braun",
+      "gender": "man"
+    },
+    {
+      "id": 21,
+      "name": "Beate geb. Schepp",
+      "gender": "woman"
+    },
+    {
+      "id": 22,
+      "name": "Christine geb. Peters",
+      "gender": "woman"
+    },
+    {
+      "id": 23,
+      "name": "Ralph Drechsler",
+      "gender": "man"
+    },
+    {
+      "id": 24,
+      "name": "Till",
+      "gender": "man"
+    },
+    {
+      "id": 25,
+      "name": "Barbara Braun",
+      "gender": "woman"
+    },
+    {
+      "id": 26,
+      "name": "Lars geb. Windmüller",
+      "gender": "man"
+    },
+    {
+      "id": 27,
+      "name": "Lasse",
+      "gender": "woman"
+    },
+    {
+      "id": 28,
+      "name": "Martha",
+      "gender": "woman"
+    },
+    {
+      "id": 29,
+      "name": "Annemarie geb. Braun",
+      "gender": "man"
+    },
+    {
+      "id": 30,
+      "name": "Sebastian Schmitz",
+      "gender": "man"
+    },
+    {
+      "id": 31,
+      "name": "Christa Braun",
+      "gender": "woman"
+    },
+    {
+      "id": 32,
+      "name": "Katja geb. Braun",
+      "gender": "woman"
+    },
+    {
+      "id": 33,
+      "name": "Dirk Semleit",
+      "gender": "man"
+    },
+    {
+      "id": 34,
+      "name": "Jana Semleit",
+      "gender": "woman"
+    },
+    {
+      "id": 35,
+      "name": "Thorsten Semleit",
+      "gender": "man"
+    },
+    {
+      "id": 36,
+      "name": "Marianne geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 37,
+      "name": "Hubert Verhülsdonk",
+      "gender": "man"
+    },
+    {
+      "id": 38,
+      "name": "Ludger Verhülsdonk",
+      "gender": "man"
+    },
+    {
+      "id": 39,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 40,
+      "name": "Martin",
+      "gender": "man"
+    },
+    {
+      "id": 41,
+      "name": "Christian",
+      "gender": "man"
+    },
+    {
+      "id": 42,
+      "name": "Anne",
+      "gender": "woman"
+    },
+    {
+      "id": 43,
+      "name": "Merle",
+      "gender": "woman"
+    },
+    {
+      "id": 44,
+      "name": "Ursula geb. Verhülsdonk",
+      "gender": "woman"
+    },
+    {
+      "id": 45,
+      "name": "Hans",
+      "gender": "man"
+    },
+    {
+      "id": 46,
+      "name": "Henry",
+      "gender": "man"
+    },
+    {
+      "id": 47,
+      "name": "Dieter Verhülsdonk",
+      "gender": "man"
+    },
+    {
+      "id": 48,
+      "name": "Elke geb. Schiwenk",
+      "gender": "woman"
+    },
+    {
+      "id": 49,
+      "name": "Sebastian",
+      "gender": "man"
+    },
+    {
+      "id": 50,
+      "name": "Florian",
+      "gender": "man"
+    },
+    {
+      "id": 51,
+      "name": "Lena",
+      "gender": "woman"
+    },
+    {
+      "id": 52,
+      "name": "Elsi geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 53,
+      "name": "Peter Velten",
+      "gender": "man"
+    },
+    {
+      "id": 54,
+      "name": "Karin Velten",
+      "gender": "woman"
+    },
+    {
+      "id": 55,
+      "name": "Rainer geb. Bock",
+      "gender": "man"
+    },
+    {
+      "id": 56,
+      "name": "Hildegard geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 57,
+      "name": "Horst Hegger",
+      "gender": "man"
+    },
+    {
+      "id": 58,
+      "name": "Sabine geb. Hegger",
+      "gender": "woman"
+    },
+    {
+      "id": 59,
+      "name": "Henne Dammer",
+      "gender": "man"
+    },
+    {
+      "id": 60,
+      "name": "Jutta geb. Hegger",
+      "gender": "woman"
+    },
+    {
+      "id": 61,
+      "name": "Raimung Pogcsz",
+      "gender": "man"
+    },
+    {
+      "id": 62,
+      "name": "Lara",
+      "gender": "woman"
+    },
+    {
+      "id": 63,
+      "name": "Dagmar geb. Hegger",
+      "gender": "woman"
+    },
+    {
+      "id": 64,
+      "name": "? Schmidt",
+      "gender": "man"
+    },
+    {
+      "id": 65,
+      "name": "Lisa",
+      "gender": "woman"
+    },
+    {
+      "id": 66,
+      "name": "Toni",
+      "gender": "man"
+    },
+    {
+      "id": 67,
+      "name": "Felix",
+      "gender": "man"
+    },
+    {
+      "id": 68,
+      "name": "Karina geb. Hegger",
+      "gender": "woman"
+    },
+    {
+      "id": 69,
+      "name": "Andreas Lind",
+      "gender": "man"
+    },
+    {
+      "id": 70,
+      "name": "Emma",
+      "gender": "woman"
+    },
+    {
+      "id": 71,
+      "name": "Madita",
+      "gender": "woman"
+    },
+    {
+      "id": 72,
+      "name": "Günther Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 73,
+      "name": "Nelly Liedges",
+      "gender": "woman"
+    },
+    {
+      "id": 74,
+      "name": "Jan Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 75,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 76,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 77,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 78,
+      "name": "Marion geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 79,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 80,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 81,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 82,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 83,
+      "name": "Kläre geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 84,
+      "name": "Franz Behet",
+      "gender": "man"
+    },
+    {
+      "id": 85,
+      "name": "Frank Behet",
+      "gender": "man"
+    },
+    {
+      "id": 86,
+      "name": "Ria geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 87,
+      "name": "Heinz Maes",
+      "gender": "man"
+    },
+    {
+      "id": 88,
+      "name": "Markus Maes",
+      "gender": "man"
+    },
+    {
+      "id": 89,
+      "name": "Angela geb. Beckedahl",
+      "gender": "woman"
+    },
+    {
+      "id": 90,
+      "name": "Julia",
+      "gender": "woman"
+    },
+    {
+      "id": 91,
+      "name": "Patrik Maes",
+      "gender": "man"
+    },
+    {
+      "id": 92,
+      "name": "Norbert Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 93,
+      "name": "Katja geb. Kub",
+      "gender": "woman"
+    },
+    {
+      "id": 94,
+      "name": "Jana Marie Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 95,
+      "name": "Lukas Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 96,
+      "name": "Elke geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 97,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 98,
+      "name": "Stafanie",
+      "gender": "woman"
+    },
+    {
+      "id": 99,
+      "name": "Pascal",
+      "gender": "man"
+    },
+    {
+      "id": 100,
+      "name": "Hubert Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 101,
+      "name": "Lore geb. Lintsches",
+      "gender": "woman"
+    },
+    {
+      "id": 102,
+      "name": "Gisela geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 103,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 104,
+      "name": "Nicole",
+      "gender": "woman"
+    },
+    {
+      "id": 105,
+      "name": "Verena",
+      "gender": "woman"
+    },
+    {
+      "id": 106,
+      "name": "Adele geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 107,
+      "name": "Heinz Wieland",
+      "gender": "man"
+    },
+    {
+      "id": 108,
+      "name": "Peter Wieland",
+      "gender": "man"
+    },
+    {
+      "id": 109,
+      "name": "Robert Wieland",
+      "gender": "man"
+    },
+    {
+      "id": 110,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 111,
+      "name": "Feemina",
+      "gender": "woman"
+    },
+    {
+      "id": 112,
+      "name": "Florian",
+      "gender": "man"
+    },
+    {
+      "id": 113,
+      "name": "Annika",
+      "gender": "woman"
+    },
+    {
+      "id": 114,
+      "name": "Ruth gebi. Wieland",
+      "gender": "woman"
+    },
+    {
+      "id": 115,
+      "name": "Norbert Volmer",
+      "gender": "man"
+    },
+    {
+      "id": 116,
+      "name": "Stefanie",
+      "gender": "woman"
+    },
+    {
+      "id": 117,
+      "name": "Sebastian",
+      "gender": "man"
+    },
+    {
+      "id": 118,
+      "name": "Ulrich Wieland",
+      "gender": "man"
+    },
+    {
+      "id": 119,
+      "name": "Gaby geb. ?",
+      "gender": "woman"
+    },
+    {
+      "id": 120,
+      "name": "Heidi",
+      "gender": "woman"
+    },
+    {
+      "id": 121,
+      "name": "Claudia",
+      "gender": "woman"
+    },
+    {
+      "id": 122,
+      "name": "Beatrix geb. Wieland",
+      "gender": "woman"
+    },
+    {
+      "id": 123,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 124,
+      "name": "Sven",
+      "gender": "man"
+    },
+    {
+      "id": 125,
+      "name": "Melanie",
+      "gender": "woman"
+    }
+  ],
+  "connections": [
+    {
+      "partner1Id": 0,
+      "partner2Id": 1,
+      "childrenIds": [2, 3]
+    },
+    {
+      "partner1Id": 4,
+      "partner2Id": 5,
+      "childrenIds": [0, 6, 20, 31, 32]
+    },
+    {
+      "partner1Id": 6,
+      "partner2Id": 7,
+      "childrenIds": [8, 9]
+    },
+    {
+      "partner1Id": 8,
+      "partner2Id": 10,
+      "childrenIds": [11]
+    },
+    {
+      "partner1Id": 12,
+      "partner2Id": 13,
+      "childrenIds": [106, 100, 4, 36, 52, 56, 72, 83, 86]
+    },
+    {
+      "partner1Id": 14,
+      "partner2Id": 15,
+      "childrenIds": [12]
+    },
+    {
+      "partner1Id": 16,
+      "partner2Id": 17,
+      "childrenIds": [13]
+    },
+    {
+      "partner1Id": 18,
+      "partner2Id": 19,
+      "childrenIds": [1]
+    },
+    {
+      "partner1Id": 20,
+      "partner2Id": 21,
+      "childrenIds": [22, 25, 29]
+    },
+    {
+      "partner1Id": 25,
+      "partner2Id": 26,
+      "childrenIds": [27, 28]
+    },
+    {
+      "partner1Id": 22,
+      "partner2Id": 23,
+      "childrenIds": [24]
+    },
+    {
+      "partner1Id": 29,
+      "partner2Id": 30,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 32,
+      "partner2Id": 33,
+      "childrenIds": [34, 35]
+    },
+    {
+      "partner1Id": 36,
+      "partner2Id": 37,
+      "childrenIds": [38, 44, 47]
+    },
+    {
+      "partner1Id": 38,
+      "partner2Id": 39,
+      "childrenIds": [40, 41, 42, 43]
+    },
+    {
+      "partner1Id": 44,
+      "partner2Id": 45,
+      "childrenIds": [46]
+    },
+    {
+      "partner1Id": 47,
+      "partner2Id": 48,
+      "childrenIds": [49, 50, 51]
+    },
+    {
+      "partner1Id": 52,
+      "partner2Id": 53,
+      "childrenIds": [54]
+    },
+    {
+      "partner1Id": 54,
+      "partner2Id": 55,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 56,
+      "partner2Id": 57,
+      "childrenIds": [58, 60, 63, 68]
+    },
+    {
+      "partner1Id": 58,
+      "partner2Id": 59,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 60,
+      "partner2Id": 61,
+      "childrenIds": [62]
+    },
+    {
+      "partner1Id": 63,
+      "partner2Id": 64,
+      "childrenIds": [65, 66, 67]
+    },
+    {
+      "partner1Id": 68,
+      "partner2Id": 69,
+      "childrenIds": [70, 71]
+    },
+    {
+      "partner1Id": 72,
+      "partner2Id": 73,
+      "childrenIds": [74, 78]
+    },
+    {
+      "partner1Id": 74,
+      "partner2Id": 75,
+      "childrenIds": [76, 77]
+    },
+    {
+      "partner1Id": 78,
+      "partner2Id": 79,
+      "childrenIds": [80, 81, 82]
+    },
+    {
+      "partner1Id": 83,
+      "partner2Id": 84,
+      "childrenIds": [85]
+    },
+    {
+      "partner1Id": 86,
+      "partner2Id": 87,
+      "childrenIds": [88, 91]
+    },
+    {
+      "partner1Id": 88,
+      "partner2Id": 89,
+      "childrenIds": [90]
+    },
+    {
+      "partner1Id": 100,
+      "partner2Id": 101,
+      "childrenIds": [102, 96, 92]
+    },
+    {
+      "partner1Id": 102,
+      "partner2Id": 103,
+      "childrenIds": [104, 105]
+    },
+    {
+      "partner1Id": 96,
+      "partner2Id": 97,
+      "childrenIds": [98, 99]
+    },
+    {
+      "partner1Id": 92,
+      "partner2Id": 93,
+      "childrenIds": [94, 95]
+    },
+    {
+      "partner1Id": 106,
+      "partner2Id": 107,
+      "childrenIds": [122, 118, 114, 109, 108]
+    },
+    {
+      "partner1Id": 122,
+      "partner2Id": 123,
+      "childrenIds": [124, 125]
+    },
+    {
+      "partner1Id": 118,
+      "partner2Id": 119,
+      "childrenIds": [120, 121]
+    },
+    {
+      "partner1Id": 114,
+      "partner2Id": 115,
+      "childrenIds": [116, 117]
+    },
+    {
+      "partner1Id": 109,
+      "partner2Id": 110,
+      "childrenIds": [111, 112, 113]
+    }
+  ]
 }
