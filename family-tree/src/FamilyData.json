@@ -82,7 +82,7 @@
     },
     {
       "id": 16,
-      "name": "Sophia Schumacher",
+      "name": "Sophia geb. Schumacher",
       "gender": "woman"
     },
     {
@@ -629,6 +629,51 @@
       "id": 125,
       "name": "Melanie",
       "gender": "woman"
+    },
+    {
+      "id": 126,
+      "name": "Gottlieb Hinterberger",
+      "gender": "man"
+    },
+    {
+      "id": 127,
+      "name": "Gertrud geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 128,
+      "name": "Arnold",
+      "gender": "man"
+    },
+    {
+      "id": 129,
+      "name": "Anna geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 130,
+      "name": "? Schumacher",
+      "gender": "man"
+    },
+    {
+      "id": 131,
+      "name": "Petronella geb. ?",
+      "gender": "woman"
+    },
+    {
+      "id": 132,
+      "name": "Bruder/Schwester",
+      "gender": "woman"
+    },
+    {
+      "id": 133,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 134,
+      "name": "",
+      "gender": "man"
     }
   ],
   "connections": [
@@ -826,6 +871,27 @@
       "partner1Id": 109,
       "partner2Id": 110,
       "childrenIds": [111, 112, 113]
+    }
+    ,
+    {
+      "partner1Id": 133,
+      "partner2Id": 134,
+      "childrenIds": [132,130,16,127]
+    },
+    {
+      "partner1Id": 130,
+      "partner2Id": 131,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 126,
+      "partner2Id": 127,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 128,
+      "partner2Id": 129,
+      "childrenIds": []
     }
   ]
 }
