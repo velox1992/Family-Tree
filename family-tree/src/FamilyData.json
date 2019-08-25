@@ -259,6 +259,206 @@
             "id": 51,
             "name": "Lena",
             "gender": "woman"
+        },
+        {
+            "id": 52,
+            "name": "Elsi geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 53,
+            "name": "Peter Velten",
+            "gender": "man"
+        },
+        {
+            "id": 54,
+            "name": "Karin Velten",
+            "gender": "woman"
+        },
+        {
+            "id": 55,
+            "name": "Rainer geb. Bock",
+            "gender": "man"
+        },
+        {
+            "id": 56,
+            "name": "Hildegard geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 57,
+            "name": "Horst Hegger",
+            "gender": "man"
+        },
+        {
+            "id": 58,
+            "name": "Sabine geb. Hegger",
+            "gender": "woman"
+        },
+        {
+            "id": 59,
+            "name": "Henne Dammer",
+            "gender": "man"
+        },
+        {
+            "id": 60,
+            "name": "Jutta geb. Hegger",
+            "gender": "woman"
+        },
+        {
+            "id": 61,
+            "name": "Raimung Pogcsz",
+            "gender": "man"
+        },
+        {
+            "id": 62,
+            "name": "Lara",
+            "gender": "woman"
+        },
+        {
+            "id": 63,
+            "name": "Dagmar geb. Hegger",
+            "gender": "woman"
+        },
+        {
+            "id": 64,
+            "name": "? Schmidt",
+            "gender": "man"
+        },
+        {
+            "id": 65,
+            "name": "Lisa",
+            "gender": "woman"
+        },
+        {
+            "id": 66,
+            "name": "Toni",
+            "gender": "man"
+        },
+        {
+            "id": 67,
+            "name": "Felix",
+            "gender": "man"
+        },
+        {
+            "id": 68,
+            "name": "Karina geb. Hegger",
+            "gender": "woman"
+        },
+        {
+            "id": 69,
+            "name": "Andreas Lind",
+            "gender": "man"
+        },
+        {
+            "id": 70,
+            "name": "Emma",
+            "gender": "woman"
+        },
+        {
+            "id": 71,
+            "name": "Madita",
+            "gender": "woman"
+        },
+        {
+            "id": 72,
+            "name": "Günther Schürgers",
+            "gender": "man"
+        },
+        {
+            "id": 73,
+            "name": "Nelly Liedges",
+            "gender": "woman"
+        },
+        {
+            "id": 74,
+            "name": "Jan Schürgers",
+            "gender": "man"
+        },
+        {
+            "id": 75,
+            "name": "",
+            "gender": "woman"
+        },
+        {
+            "id": 76,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 77,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 78,
+            "name": "Marion geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 79,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 80,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 81,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 82,
+            "name": "",
+            "gender": "man"
+        },
+        {
+            "id": 83,
+            "name": "Kläre geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 84,
+            "name": "Franz Behet",
+            "gender": "man"
+        },
+        {
+            "id": 85,
+            "name": "Frank Behet",
+            "gender": "man"
+        },
+        {
+            "id": 86,
+            "name": "Ria geb. Schürgers",
+            "gender": "woman"
+        },
+        {
+            "id": 87,
+            "name": "Heinz Maes",
+            "gender": "man"
+        },
+        {
+            "id": 88,
+            "name": "Markus Maes",
+            "gender": "man"
+        },
+        {
+            "id": 89,
+            "name": "Angela geb. Beckedahl",
+            "gender": "woman"
+        },
+        {
+            "id": 90,
+            "name": "Julia",
+            "gender": "woman"
+        },
+        {
+            "id": 91,
+            "name": "Patrik Maes",
+            "gender": "man"
         }
     ],
     "connections": [
@@ -285,7 +485,7 @@
         {
             "partner1Id": 12,
             "partner2Id": 13,
-            "childrenIds": [4,36] 
+            "childrenIds": [4,36,52,56,72,83,86] 
         },
         {
             "partner1Id": 14,
@@ -347,6 +547,71 @@
             "partner1Id": 47,
             "partner2Id": 48,
             "childrenIds": [49,50,51]
+        },
+        {
+            "partner1Id": 52,
+            "partner2Id": 53,
+            "childrenIds": [54]
+        },
+        {
+            "partner1Id": 54,
+            "partner2Id": 55,
+            "childrenIds": []
+        },
+        {
+            "partner1Id": 56,
+            "partner2Id": 57,
+            "childrenIds": [58,60,63,68]
+        },
+        {
+            "partner1Id": 58,
+            "partner2Id": 59,
+            "childrenIds": []
+        },
+        {
+            "partner1Id": 60,
+            "partner2Id": 61,
+            "childrenIds": [62]
+        },
+        {
+            "partner1Id": 63,
+            "partner2Id": 64,
+            "childrenIds": [65,66,67]
+        },
+        {
+            "partner1Id": 68,
+            "partner2Id": 69,
+            "childrenIds": [70,71]
+        },
+        {
+            "partner1Id": 72,
+            "partner2Id": 73,
+            "childrenIds": [74,78]
+        },
+        {
+            "partner1Id": 74,
+            "partner2Id": 75,
+            "childrenIds": [76,77]
+        },
+        {
+            "partner1Id": 78,
+            "partner2Id": 79,
+            "childrenIds": [80,81,82]
+        },
+        {
+            "partner1Id": 83,
+            "partner2Id": 84,
+            "childrenIds": [85]
+        },
+        {
+            "partner1Id": 86,
+            "partner2Id": 87,
+            "childrenIds": [88,91]
+        },
+        {
+            "partner1Id": 88,
+            "partner2Id": 89,
+            "childrenIds": [90]
         }
         
     ]
