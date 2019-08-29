@@ -124,16 +124,16 @@ class App extends React.Component {
           <Navbar.Brand>
             <span className="white-icon">
 
-              <FontAwesomeIcon size="3x" icon="spinner" icon={faTree} />{" "}
+              <FontAwesomeIcon size="3x" icon={faTree} />{" "}
             </span>
             <span className="title">Familienstammbaum</span>
           </Navbar.Brand>
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               <span className="white-icon">
-                <FontAwesomeIcon size="2x" icon="spinner" icon={faCode} />
-                <FontAwesomeIcon size="2x" icon="spinner" icon={faCompress} />
-                <FontAwesomeIcon size="2x" icon="spinner" icon={faExpand} />
+                <FontAwesomeIcon size="2x" icon={faCode} />
+                <FontAwesomeIcon size="2x" icon={faCompress} />
+                <FontAwesomeIcon size="2x" icon={faExpand} />
               </span>
             </Navbar.Text>
           </Navbar.Collapse>
