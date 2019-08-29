@@ -674,6 +674,186 @@
       "id": 134,
       "name": "",
       "gender": "man"
+    },
+    {
+      "id": 135,
+      "name": "Katharina geb. Schürgers",
+      "gender": "woman"
+    },
+    {
+      "id": 136,
+      "name": "Willi Omsels",
+      "gender": "man"
+    },
+    {
+      "id": 137,
+      "name": "Hans Schürgers",
+      "gender": "man"
+    },
+    {
+      "id": 138,
+      "name": "Elisabeth geb. Welings",
+      "gender": "woman"
+    },
+    {
+      "id": 139,
+      "name": "Helga geb. Welings",
+      "gender": "woman"
+    },
+    {
+      "id": 140,
+      "name": "Christian Welings",
+      "gender": "man"
+    },
+    {
+      "id": 141,
+      "name": "Sohn",
+      "gender": "man"
+    },
+    {
+      "id": 142,
+      "name": "Tochter",
+      "gender": "woman"
+    },
+    {
+      "id": 143,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 144,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 145,
+      "name": "Fritz Hinterberger",
+      "gender": "man"
+    },
+    {
+      "id": 146,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 147,
+      "name": "Sohn",
+      "gender": "man"
+    },
+    {
+      "id": 148,
+      "name": "Sohn",
+      "gender": "man"
+    },
+    {
+      "id": 149,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 150,
+      "name": "Peter von Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 151,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 152,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 153,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 154,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 155,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 156,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 157,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 158,
+      "name": "Hans von Afferden ",
+      "gender": "man"
+    },
+    {
+      "id": 159,
+      "name": "Elisabeth geb. van den Boom",
+      "gender": "woman"
+    },
+    {
+      "id": 160,
+      "name": "Hermann von Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 161,
+      "name": "Klara geb. Bürschkens",
+      "gender": "woman"
+    },
+    {
+      "id": 162,
+      "name": "Willi van Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 163,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 164,
+      "name": "Hans van Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 165,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 166,
+      "name": "Margret geb. v. Afferden",
+      "gender": "man"
+    },
+    {
+      "id": 167,
+      "name": "",
+      "gender": "woman"
+    },
+    {
+      "id": 168,
+      "name": "Claudia geb. van Afferden",
+      "gender": "woman"
+    },
+    {
+      "id": 169,
+      "name": "",
+      "gender": "man"
+    },
+    {
+      "id": 170,
+      "name": "",
+      "gender": "woman"
     }
   ],
   "connections": [
@@ -705,12 +885,12 @@
     {
       "partner1Id": 14,
       "partner2Id": 15,
-      "childrenIds": [12]
+      "childrenIds": [158,12,160]
     },
     {
       "partner1Id": 16,
       "partner2Id": 17,
-      "childrenIds": [13]
+      "childrenIds": [13,135,137]
     },
     {
       "partner1Id": 18,
@@ -886,11 +1066,73 @@
     {
       "partner1Id": 126,
       "partner2Id": 127,
-      "childrenIds": []
+      "childrenIds": [145]
     },
     {
       "partner1Id": 128,
       "partner2Id": 129,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 135,
+      "partner2Id": 136,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 137,
+      "partner2Id": 138,
+      "childrenIds": [139,140]
+    },
+    {
+      "partner1Id": 139,
+      "partner2Id": 143,
+      "childrenIds": [141]
+    },
+    {
+      "partner1Id": 140,
+      "partner2Id": 144,
+      "childrenIds": [142]
+    },
+    {
+      "partner1Id": 145,
+      "partner2Id": 146,
+      "childrenIds": [147,148]
+    },
+    {
+      "partner1Id": 156,
+      "partner2Id": 157,
+      "childrenIds": [15,150,152,154]
+    },
+
+    
+    {
+      "partner1Id": 169,
+      "partner2Id": 170,
+      "childrenIds": [149,14]
+    },
+    {
+      "partner1Id": 158,
+      "partner2Id": 159,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 160,
+      "partner2Id": 161,
+      "childrenIds": [162,164,166]
+    },
+    {
+      "partner1Id": 162,
+      "partner2Id": 163,
+      "childrenIds": [168]
+    },
+    {
+      "partner1Id": 164,
+      "partner2Id": 165,
+      "childrenIds": []
+    },
+    {
+      "partner1Id": 166,
+      "partner2Id": 167,
       "childrenIds": []
     }
   ]

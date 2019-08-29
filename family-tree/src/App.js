@@ -14,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: GraphToD3TreeConverter(FamilyGraph, 16)
+      familyRelations: GraphToD3TreeConverter(FamilyGraph, 156)
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);
@@ -26,6 +26,7 @@ class App extends React.Component {
   }
 
   handleNodeClick(name, extras){
+    console.log(name + " " + extras.id);
     this.setState({ familyRelations: GraphToD3TreeConverter(FamilyGraph, extras.id)})
   }
 

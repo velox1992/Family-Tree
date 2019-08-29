@@ -3,7 +3,7 @@ import dTree from "d3-dtree";
 import "./FamilyGraph.css";
 import "jsoneditor-react/es/editor.min.css";
 
-class FamilyTree extends React.Component {
+class FamilyDTree extends React.Component {
   componentDidMount() {
     if (this.props.data !== undefined) {
       this.renderGraph(this.props.data);
@@ -50,8 +50,7 @@ class FamilyTree extends React.Component {
       // Container vor erneutem Graph erstellen leeren.
       document.getElementById("graph").innerHTML = "";
       dTree.init(data, options);
-
   }
 }
 
-export default FamilyTree;
+export default FamilyDTree;
