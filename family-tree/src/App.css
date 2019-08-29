@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+
 }
 
 .center-block {
@@ -12,6 +12,12 @@ body {
   text-align: center;
 }
 
+.header {
+  height: 100%;
+  background-color: aqua;
+  margin-top: 5px;
+}
+
 /* Div des JsonEditors */
 div[name="outer-box"] {
   /*margin: 0px in der React-Komponente definiert. Zum Zentrieren deshalb ...*/
@@ -19,5 +25,6 @@ div[name="outer-box"] {
 }
 
 #graph svg {
-  width: 100%;
+  width: 100vw;
+  height: 90vh;
 }

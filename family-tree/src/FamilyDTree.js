@@ -6,13 +6,13 @@ import "jsoneditor-react/es/editor.min.css";
 class FamilyDTree extends React.Component {
   componentDidMount() {
     if (this.props.data !== undefined) {
-      this.renderGraph(this.props.data);
+      this.renderGraph(this.props.data, this.props.height, this.props.width);
     }
   }
 
   componentDidUpdate() {
     if (this.props.data !== undefined) {
-      this.renderGraph(this.props.data);
+      this.renderGraph(this.props.data, this.props.height, this.props.width);
     }
   }
 
@@ -21,13 +21,13 @@ class FamilyDTree extends React.Component {
     return <div id="graph"/>;
   }
 
-  renderGraph(data) {
+  renderGraph(data, height, width) {
 
     const options = {
       target: "#graph",
       debug: false,
-      width: 800,
-      height: 400,
+      width: parseInt(height,10),
+      height: parseInt(width,10),
       callbacks: {
         nodeClick: this.props.onNodeClick 
       },
@@ -45,6 +45,10 @@ class FamilyDTree extends React.Component {
         text: "nodeText"
       }
     };
+
+    console.log(options);
+
+
 
 
       // Container vor erneutem Graph erstellen leeren.

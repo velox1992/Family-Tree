@@ -14,7 +14,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: GraphToD3TreeConverter(FamilyGraph, 156)
+      familyRelations: GraphToD3TreeConverter(FamilyGraph, 156),
+      showEditor: false,
+      showFullscreen: true
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);
@@ -25,9 +27,11 @@ class App extends React.Component {
     this.setState({ familyRelations: event.jsObject });
   }
 
-  handleNodeClick(name, extras){
+  handleNodeClick(name, extras) {
     console.log(name + " " + extras.id);
-    this.setState({ familyRelations: GraphToD3TreeConverter(FamilyGraph, extras.id)})
+    this.setState({
+      familyRelations: GraphToD3TreeConverter(FamilyGraph, extras.id)
+    });
   }
 
   render() {
@@ -45,26 +49,67 @@ class App extends React.Component {
       />
     );
 
+    var hApp = undefined;
+
+    if (this.state.showFullscreen){
+      hApp = (
+        <div className="center-text">
+                <FamilyDTree
+                  data={this.state.familyRelations}
+                  onNodeClick={this.handleNodeClick}
+                  height={window.innerHeight}
+                  width="600"
+                />
+              </div>
+      );
+    } else {
+      
+    }
+
     return (
       <>
         <Container>
-          {" "}
-          <Jumbotron>
-            <h1>Familienstammbaum</h1>
-          </Jumbotron>
+          <h1 className="header center-text">
+            Familienstammbaum
+          </h1>
         </Container>
 
         <Container>
           <Row>
             <Col>
               <div className="center-text">
-                <FamilyDTree data={this.state.familyRelations} onNodeClick={this.handleNodeClick} />
+                <FamilyDTree
+                  data={this.state.familyRelations}
+                  onNodeClick={this.handleNodeClick}
+                  height={window.innerHeight}
+                  width="600"
+                />
               </div>
             </Col>
           </Row>
-          <Row>
-            <Col>{hJsonEditor}</Col>
-          </Row>
+          <Row></Row>
+          {this.state.showEditor ? (
+            <Row>
+              <Col>
+                <button
+                  onClick={event =>
+                    this.setState({ showEditor: !this.state.showEditor })
+                  }
+                >
+                  Verstecke Daten
+                </button>
+                {hJsonEditor}
+              </Col>
+            </Row>
+          ) : (
+            <button
+              onClick={event =>
+                this.setState({ showEditor: !this.state.showEditor })
+              }
+            >
+              Zeige Daten
+            </button>
+          )}
         </Container>
       </>
     );
