@@ -6,7 +6,14 @@ import locale from "react-json-editor-ajrm/locale/en";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Jumbotron from "react-bootstrap/Jumbotron";
+import Navbar from "react-bootstrap/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTree,
+  faExpand,
+  faCompress,
+  faCode
+} from "@fortawesome/free-solid-svg-icons";
 const GraphToD3TreeConverter = require("./GraphTodD3TreeConverter/GraphToD3TreeConverter");
 var FamilyGraph = require("./FamilyData.json");
 
@@ -34,7 +41,20 @@ class App extends React.Component {
     });
   }
 
-  render() {
+  getFullscreenApp() {
+    return (
+      <div className="center-text fullscreen">
+        <FamilyDTree
+          data={this.state.familyRelations}
+          onNodeClick={this.handleNodeClick}
+          height={window.innerHeight}
+          width="600"
+        />
+      </div>
+    );
+  }
+
+  getStandardApp() {
     var hJsonEditor = (
       <JSONInput
         className="test"
@@ -49,68 +69,77 @@ class App extends React.Component {
       />
     );
 
-    var hApp = undefined;
+    return (
+      <Container>
+        <Row>
+          <Col>
+            <div className="center-text">
+              <FamilyDTree
+                data={this.state.familyRelations}
+                onNodeClick={this.handleNodeClick}
+                height={window.innerHeight}
+                width="600"
+              />
+            </div>
+          </Col>
+        </Row>
+        <Row></Row>
+        {this.state.showEditor ? (
+          <Row>
+            <Col>
+              <button
+                onClick={event =>
+                  this.setState({ showEditor: !this.state.showEditor })
+                }
+              >
+                Verstecke Daten
+              </button>
+              {hJsonEditor}
+            </Col>
+          </Row>
+        ) : (
+          <button
+            onClick={event =>
+              this.setState({ showEditor: !this.state.showEditor })
+            }
+          >
+            Zeige Daten
+          </button>
+        )}
+      </Container>
+    );
+  }
 
-    if (this.state.showFullscreen){
-      hApp = (
-        <div className="center-text">
-                <FamilyDTree
-                  data={this.state.familyRelations}
-                  onNodeClick={this.handleNodeClick}
-                  height={window.innerHeight}
-                  width="600"
-                />
-              </div>
-      );
+  render() {
+    var hApp = undefined;
+    if (this.state.showFullscreen) {
+      hApp = this.getFullscreenApp();
     } else {
-      
+      hApp = this.getStandardApp();
     }
 
     return (
       <>
-        <Container>
-          <h1 className="header center-text">
-            Familienstammbaum
-          </h1>
-        </Container>
+        <Navbar bg="dark">
+          <Navbar.Brand>
+            <span className="white-icon">
 
-        <Container>
-          <Row>
-            <Col>
-              <div className="center-text">
-                <FamilyDTree
-                  data={this.state.familyRelations}
-                  onNodeClick={this.handleNodeClick}
-                  height={window.innerHeight}
-                  width="600"
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row></Row>
-          {this.state.showEditor ? (
-            <Row>
-              <Col>
-                <button
-                  onClick={event =>
-                    this.setState({ showEditor: !this.state.showEditor })
-                  }
-                >
-                  Verstecke Daten
-                </button>
-                {hJsonEditor}
-              </Col>
-            </Row>
-          ) : (
-            <button
-              onClick={event =>
-                this.setState({ showEditor: !this.state.showEditor })
-              }
-            >
-              Zeige Daten
-            </button>
-          )}
-        </Container>
+              <FontAwesomeIcon size="3x" icon="spinner" icon={faTree} />{" "}
+            </span>
+            <span className="title">Familienstammbaum</span>
+          </Navbar.Brand>
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              <span className="white-icon">
+                <FontAwesomeIcon size="2x" icon="spinner" icon={faCode} />
+                <FontAwesomeIcon size="2x" icon="spinner" icon={faCompress} />
+                <FontAwesomeIcon size="2x" icon="spinner" icon={faExpand} />
+              </span>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Navbar>
+
+        {hApp}
       </>
     );
   }
