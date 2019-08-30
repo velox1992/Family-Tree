@@ -3,17 +3,11 @@ import "./App.css";
 import FamilyDTree from "./FamilyDTree.js";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Navbar from "react-bootstrap/Navbar";
+
+import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTree,
-  faExpand,
-  faCompress,
-  faCode
-} from "@fortawesome/free-solid-svg-icons";
+import { faTree, faCode } from "@fortawesome/free-solid-svg-icons";
 const GraphToD3TreeConverter = require("./GraphTodD3TreeConverter/GraphToD3TreeConverter");
 var FamilyGraph = require("./FamilyData.json");
 
@@ -54,76 +48,32 @@ class App extends React.Component {
     );
   }
 
-  getStandardApp() {
-    var hJsonEditor = (
-      <JSONInput
-        className="test"
-        placeholder={this.state.familyRelations} // data to display
-        theme="dark_vscode_tribute"
-        locale={locale}
-        colors={{
-          string: "#DAA520" // overrides theme colors with whatever color value you want
-        }}
-        height="550px"
-        onChange={this.handleJsonValueChange}
-      />
-    );
-
-    return (
-      <Container>
-        <Row>
-          <Col>
-            <div className="center-text">
-              <FamilyDTree
-                data={this.state.familyRelations}
-                onNodeClick={this.handleNodeClick}
-                height={window.innerHeight}
-                width="600"
-              />
-            </div>
-          </Col>
-        </Row>
-        <Row></Row>
-        {this.state.showEditor ? (
-          <Row>
-            <Col>
-              <button
-                onClick={event =>
-                  this.setState({ showEditor: !this.state.showEditor })
-                }
-              >
-                Verstecke Daten
-              </button>
-              {hJsonEditor}
-            </Col>
-          </Row>
-        ) : (
-          <button
-            onClick={event =>
-              this.setState({ showEditor: !this.state.showEditor })
-            }
-          >
-            Zeige Daten
-          </button>
-        )}
-      </Container>
-    );
-  }
-
   render() {
-    var hApp = undefined;
-    if (this.state.showFullscreen) {
-      hApp = this.getFullscreenApp();
-    } else {
-      hApp = this.getStandardApp();
+    var hJsonEditor = undefined;
+    if (this.state.showEditor) {
+      hJsonEditor = (
+        <JSONInput
+          className="test"
+          placeholder={this.state.familyRelations} // data to display
+          theme="dark_vscode_tribute"
+          locale={locale}
+          colors={{
+            string: "#DAA520" // overrides theme colors with whatever color value you want
+          }}
+          height="300px"
+          width="99vw"
+          onChange={this.handleJsonValueChange}
+        />
+      );
     }
+
+    var hApp = this.getFullscreenApp();
 
     return (
       <>
         <Navbar bg="dark">
           <Navbar.Brand>
             <span className="white-icon">
-
               <FontAwesomeIcon size="3x" icon={faTree} />{" "}
             </span>
             <span className="title">Familienstammbaum</span>
@@ -131,14 +81,19 @@ class App extends React.Component {
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               <span className="white-icon">
-                <FontAwesomeIcon size="2x" icon={faCode} />
-                <FontAwesomeIcon size="2x" icon={faCompress} />
-                <FontAwesomeIcon size="2x" icon={faExpand} />
+                <Button
+                  onClick={event =>
+                    this.setState({ showEditor: !this.state.showEditor })
+                  }
+                >
+                  <FontAwesomeIcon size="2x" icon={faCode} />
+                </Button>
               </span>
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar>
 
+        {hJsonEditor}
         {hApp}
       </>
     );

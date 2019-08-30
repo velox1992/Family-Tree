@@ -47,3 +47,7 @@ div[class^="fullscreeen"] svg {
   font-size: 2em;
   margin-left: 20px;
 }
+
+.modal-90w{
+  max-width: 800px;
+}

@@ -46,11 +46,6 @@ class FamilyDTree extends React.Component {
       }
     };
 
-    console.log(options);
-
-
-
-
       // Container vor erneutem Graph erstellen leeren.
       document.getElementById("graph").innerHTML = "";
       dTree.init(data, options);
