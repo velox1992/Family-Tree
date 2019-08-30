@@ -3,25 +3,25 @@ import "./App.css";
 import FamilyDTree from "./FamilyDTree.js";
 import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
-import Navbar from "react-bootstrap/Navbar";
 
-import Button from "react-bootstrap/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTree, faCode } from "@fortawesome/free-solid-svg-icons";
+import Header from "./Header.js";
 const GraphToD3TreeConverter = require("./GraphTodD3TreeConverter/GraphToD3TreeConverter");
-var FamilyGraph = require("./FamilyData.json");
+
+var FamilyGraphData = require("./FamilyData.json");
+const initialFamilyTreeRootId = 156;
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: GraphToD3TreeConverter(FamilyGraph, 156),
+      familyRelations: GraphToD3TreeConverter(FamilyGraphData, initialFamilyTreeRootId),
       showEditor: false,
       showFullscreen: true
     };
 
     this.handleJsonValueChange = this.handleJsonValueChange.bind(this);
     this.handleNodeClick = this.handleNodeClick.bind(this);
+    this.handleHeaderShowDataClick = this.handleHeaderShowDataClick.bind(this);
   }
 
   handleJsonValueChange(event) {
@@ -31,21 +31,12 @@ class App extends React.Component {
   handleNodeClick(name, extras) {
     console.log(name + " " + extras.id);
     this.setState({
-      familyRelations: GraphToD3TreeConverter(FamilyGraph, extras.id)
+      familyRelations: GraphToD3TreeConverter(FamilyGraphData, extras.id)
     });
   }
 
-  getFullscreenApp() {
-    return (
-      <div className="center-text fullscreen">
-        <FamilyDTree
-          data={this.state.familyRelations}
-          onNodeClick={this.handleNodeClick}
-          height={window.innerHeight}
-          width="600"
-        />
-      </div>
-    );
+  handleHeaderShowDataClick(event) {
+    this.setState({showEditor: !this.state.showEditor});
   }
 
   render() {
@@ -67,35 +58,23 @@ class App extends React.Component {
       );
     }
 
-    var hApp = this.getFullscreenApp();
+    const hGraph = (
+      <div className="center-text fullscreen">
+        <FamilyDTree
+          data={this.state.familyRelations}
+          onNodeClick={this.handleNodeClick}
+          height={window.innerHeight}
+          width="600"
+        />
+      </div>
+    );
 
     return (
-      <>
-        <Navbar bg="dark">
-          <Navbar.Brand>
-            <span className="white-icon">
-              <FontAwesomeIcon size="3x" icon={faTree} />{" "}
-            </span>
-            <span className="title">Familienstammbaum</span>
-          </Navbar.Brand>
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              <span className="white-icon">
-                <Button
-                  onClick={event =>
-                    this.setState({ showEditor: !this.state.showEditor })
-                  }
-                >
-                  <FontAwesomeIcon size="2x" icon={faCode} />
-                </Button>
-              </span>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Navbar>
-
+      <div>
+        <Header onShowDataClick={this.handleHeaderShowDataClick}></Header>
         {hJsonEditor}
-        {hApp}
-      </>
+        {hGraph}
+      </div>
     );
   }
 }
