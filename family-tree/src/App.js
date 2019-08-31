@@ -14,7 +14,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: GraphToD3TreeConverter(FamilyGraphData, initialFamilyTreeRootId),
+      familyRelations: GraphToD3TreeConverter(
+        FamilyGraphData,
+        initialFamilyTreeRootId
+      ),
       showEditor: false,
       showFullscreen: true
     };
@@ -36,7 +39,7 @@ class App extends React.Component {
   }
 
   handleHeaderShowDataClick(event) {
-    this.setState({showEditor: !this.state.showEditor});
+    this.setState({ showEditor: !this.state.showEditor });
   }
 
   render() {
@@ -58,7 +61,7 @@ class App extends React.Component {
       );
     }
 
-    const hGraph = (
+    var hGraph = (
       <div className="center-text fullscreen">
         <FamilyDTree
           data={this.state.familyRelations}

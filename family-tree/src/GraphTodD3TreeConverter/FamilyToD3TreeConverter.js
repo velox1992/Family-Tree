@@ -3,7 +3,7 @@ function convert(family, rootId) {
   // Solange die Eltern-Beziehungen "hochlaufen" bis es keine Eltern mehr gibt
   var hIsAbsoluteRoot = false;
   var hAbsoluteRootId = rootId;
-  var hCurrentPerson = family.persons[rootId];
+  var hCurrentPerson = family.members[rootId];
   while (!hIsAbsoluteRoot) {
     if (hCurrentPerson.parentConnection !== undefined) {
       var hParent = hCurrentPerson.parentConnection.partner1;
@@ -17,7 +17,7 @@ function convert(family, rootId) {
   var hGraph = [];
 
   var hPeronStructure = generatePersonStructure(
-    family.persons[hAbsoluteRootId]
+    family.members[hAbsoluteRootId]
   );
   hGraph.push(hPeronStructure);
 

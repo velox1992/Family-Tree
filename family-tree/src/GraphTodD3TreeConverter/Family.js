@@ -1,16 +1,16 @@
 class Family {
     constructor() {
-      this.persons = [];
+      this.members = [];
       this.connections = [];
       this.marriageNodeIds = [];
     }
   
     addFamilyMember(member) {
-      this.persons.push(member);
+      this.members.push(member);
     }
   
     setFamilyMembers(members) {
-      this.persons = members;
+      this.members = members;
     }
   
     addConnection(connection) {

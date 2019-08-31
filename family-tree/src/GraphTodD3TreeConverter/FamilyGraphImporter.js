@@ -14,7 +14,7 @@ class FamilyGraphImporter {
     var hFamilyMembers = this.getFamilyMembers(hFamilyData.persons);
     this.family.setFamilyMembers(hFamilyMembers);
 
-    this.createConnections(hFamilyData.connections);
+    this.createConnectionsBetweenMembers(hFamilyData.connections);
 
     return this.family;
   }
@@ -41,13 +41,13 @@ class FamilyGraphImporter {
     return 0;
   }
 
-  createConnections(connections) {
+  createConnectionsBetweenMembers(connections) {
     // Die Familienmitglieder wurden eingelesen
     // Jetzt müssen die Verbindungen erstellt werden und mit Infos gefüllt werden
     // In diesem Zuge bekommen auf die jeweiligen Mitglieder einen Verweis auf die Verbindung gesetzt
     connections.forEach(connection => {
-      var hPartner1 = this.family.persons[connection.partner1Id];
-      var hPartner2 = this.family.persons[connection.partner2Id];
+      var hPartner1 = this.family.members[connection.partner1Id];
+      var hPartner2 = this.family.members[connection.partner2Id];
 
       var hNewConnection = new Connection(hPartner1, hPartner2);
       hPartner1.connection = hNewConnection;
@@ -56,11 +56,11 @@ class FamilyGraphImporter {
       var hChildrenOfConnection = [];
 
       connection.childrenIds.forEach(childrenId => {
-        var hChild = this.family.persons[childrenId];
-        hChildrenOfConnection.push(hChild);
+        var hCurrentChild = this.family.members[childrenId];
+        hChildrenOfConnection.push(hCurrentChild);
 
         // Kind bekommt direkt einen Verweis auf die elterliche Verbindung
-        hChild.setParentConnection(hNewConnection);
+        hCurrentChild.setParentConnection(hNewConnection);
       });
 
       hNewConnection.children = hChildrenOfConnection;
@@ -68,10 +68,7 @@ class FamilyGraphImporter {
       this.family.addConnection(hNewConnection);
     });
   }
-  generate(rootId) {
-    var hFamily = this.import();
-    return hFamily.createGraph(rootId);
-  }
+
 }
 
 module.exports = FamilyGraphImporter;
