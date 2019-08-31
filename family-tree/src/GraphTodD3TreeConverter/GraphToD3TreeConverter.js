@@ -10,8 +10,8 @@ function convert(graphData, rootId){
     var hFamily = previousFamily;
     
     if (graphData !== previousGraph){
-        var hImporter = new FamilyGraphImporter();
-        hFamily = hImporter.import(graphData);      
+        hFamily = FamilyGraphImporter(graphData)
+          
 
         previousGraph = graphData;
         previousFamily = hFamily;
