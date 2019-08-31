@@ -1,5 +1,5 @@
 const FamilyGraphImporter = require("./FamilyGraphImporter");
-const FamilyToD3TreeConverter = require("./FamilyToD3TreeConverter");
+const FamilyToDTreeConverter = require("./FamilyToDTreeConverter");
 
 // Remember the last Graph/Family to avoid redundant import
 var previousGraph;
@@ -15,7 +15,7 @@ function convert(graphData, rootId) {
     previousFamily = hFamily;
   }
 
-  return FamilyToD3TreeConverter(hFamily, rootId);
+  return FamilyToDTreeConverter(hFamily, rootId);
 }
 
 module.exports = convert;

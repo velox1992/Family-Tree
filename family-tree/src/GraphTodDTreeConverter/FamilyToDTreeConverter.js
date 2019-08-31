@@ -14,9 +14,9 @@ function convert(family, rootId) {
     }
   }
 
-  var hPeronStructure = generateD3TreeRecursive(family.members[hRootId]);
+  var hPeronStructure = generateDTreeRecursive(family.members[hRootId]);
 
-  return [hPeronStructure];;
+  return [hPeronStructure];
 }
 
 function getAParent(familyMember) {
@@ -24,31 +24,30 @@ function getAParent(familyMember) {
   return familyMember.parentConnection.partner1;
 }
 
-
-function generateD3TreeRecursive(familyMember) {
-  var hD3TreePerson = createFamilyMemberD3Format(familyMember);
+function generateDTreeRecursive(familyMember) {
+  var hD3TreePerson = createFamilyMemberDTreeFormat(familyMember);
 
   // Hat die Person eine Verbindung?
   if (familyMember.connection !== undefined) {
     var hPartner = getPartnerOfFamilyMember(familyMember);
-    var hPartnerObject = createPartnerD3Format(hPartner);
+    var hPartnerObject = createPartnerDTreeFormat(hPartner);
 
     // Kinder ermitteln
     var hChildren = [];
     familyMember.connection.children.forEach(child => {
       // Nun wird das jeweilige Kind und dessen Daten und Beziehungen analysiert (rekursiv)
       // Das Ergebnis des resultierenden Teilbaums wird hier in die Datenstruktur hinzugefügt.
-      var hChildData = generateD3TreeRecursive(child);
+      var hChildData = generateDTreeRecursive(child);
       hChildren.push(hChildData);
     });
 
-    insertFamilyInfoToD3TreePerson(hD3TreePerson, hPartnerObject, hChildren);   
+    insertFamilyInfoToDTreePerson(hD3TreePerson, hPartnerObject, hChildren);
   }
 
   return hD3TreePerson;
 }
 
-function createFamilyMemberD3Format(familyMember) {
+function createFamilyMemberDTreeFormat(familyMember) {
   return {
     name: familyMember.name,
     class: familyMember.gender,
@@ -58,7 +57,7 @@ function createFamilyMemberD3Format(familyMember) {
   };
 }
 
-function createPartnerD3Format(partner) {
+function createPartnerDTreeFormat(partner) {
   // Hat der Partner auch noch parent Informationen? Dann ist dort noch ein alternativer Root möglich und soll visuell markiert werden
   var genderClass = getGenderClassOfPartner(partner);
 
@@ -86,7 +85,7 @@ function getGenderClassOfPartner(partner) {
   return hGender;
 }
 
-function insertFamilyInfoToD3TreePerson(d3TreePerson, partnerObject, children){
+function insertFamilyInfoToDTreePerson(d3TreePerson, partnerObject, children) {
   // Im aktuellen Familienmitglied noch diese Verbindungsinformmationen hinterlegen
   d3TreePerson["marriages"] = [
     {

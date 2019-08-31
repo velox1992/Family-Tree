@@ -5,7 +5,7 @@ import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 
 import Header from "./Header.js";
-const GraphToD3TreeConverter = require("./GraphTodD3TreeConverter/GraphToD3TreeConverter");
+const GraphToDTreeConverter = require("./GraphTodDTreeConverter/GraphToDTreeConverter");
 
 var FamilyGraphData = require("./FamilyData.json");
 const initialFamilyTreeRootId = 156;
@@ -14,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      familyRelations: GraphToD3TreeConverter(
+      familyRelations: GraphToDTreeConverter(
         FamilyGraphData,
         initialFamilyTreeRootId
       ),
@@ -34,7 +34,7 @@ class App extends React.Component {
   handleNodeClick(name, extras) {
     console.log(name + " " + extras.id);
     this.setState({
-      familyRelations: GraphToD3TreeConverter(FamilyGraphData, extras.id)
+      familyRelations: GraphToDTreeConverter(FamilyGraphData, extras.id)
     });
   }
 
