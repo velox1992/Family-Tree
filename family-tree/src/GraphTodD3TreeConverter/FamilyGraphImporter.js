@@ -1,5 +1,5 @@
 const Family = require("./Family");
-const Person = require("./Person");
+const FamilyMember = require("./FamilyMember");
 const Connection = require("./Connection");
 
 function importGraph(graphData) {
@@ -20,7 +20,7 @@ function getFamilyMembers(familyMember) {
 
   var hFamilyMembers = [];
   hFamilyMember.forEach(member => {
-    hFamilyMembers.push(new Person(member.id, member.name, member.gender));
+    hFamilyMembers.push(new FamilyMember(member.id, member.name, member.gender));
   });
 
   return hFamilyMembers;

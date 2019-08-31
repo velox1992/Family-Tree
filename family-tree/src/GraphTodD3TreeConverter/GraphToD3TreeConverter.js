@@ -5,20 +5,17 @@ const FamilyToD3TreeConverter = require("./FamilyToD3TreeConverter");
 var previousGraph;
 var previousFamily;
 
-function convert(graphData, rootId){
+function convert(graphData, rootId) {
+  var hFamily = previousFamily;
 
-    var hFamily = previousFamily;
-    
-    if (graphData !== previousGraph){
-        hFamily = FamilyGraphImporter(graphData)
-          
+  if (graphData !== previousGraph) {
+    hFamily = FamilyGraphImporter(graphData);
 
-        previousGraph = graphData;
-        previousFamily = hFamily;
-    }
+    previousGraph = graphData;
+    previousFamily = hFamily;
+  }
 
-    return FamilyToD3TreeConverter(hFamily, rootId);
-
+  return FamilyToD3TreeConverter(hFamily, rootId);
 }
 
 module.exports = convert;

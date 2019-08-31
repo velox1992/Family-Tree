@@ -1,4 +1,4 @@
-class Person {
+class FamilyMember {
     constructor(id, name, gender) {
       this.connection = undefined;
       this.parentConnection = undefined;
@@ -16,4 +16,4 @@ class Person {
     }
   }
 
-module.exports = Person;
+module.exports = FamilyMember;
