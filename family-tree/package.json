@@ -9,6 +9,7 @@
     "d3": "^5.10.0",
     "d3-dtree": "^2.2.2",
     "d3-tree": "^1.0.24",
+    "graphtodtreeconverter": "^1.0.0",
     "jsoneditor": "^6.3.0",
     "jsoneditor-react": "^1.0.1",
     "react": "^16.9.0",

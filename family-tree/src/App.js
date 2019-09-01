@@ -5,7 +5,7 @@ import JSONInput from "react-json-editor-ajrm";
 import locale from "react-json-editor-ajrm/locale/en";
 
 import Header from "./Header.js";
-const GraphToDTreeConverter = require("./GraphTodDTreeConverter/GraphToDTreeConverter");
+const GraphToDTreeConverter = require("graphtodtreeconverter");
 
 var FamilyGraphData = require("./FamilyData.json");
 const initialFamilyTreeRootId = 156;
