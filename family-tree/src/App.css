@@ -1,5 +1,4 @@
 body {
-
 }
 
 .center-block {
@@ -31,15 +30,32 @@ div[name="outer-box"] {
 
 div[class^="fullscreeen"] svg {
   width: 100vw;
-} 
+}
 
-.white-icon{
+.white-icon {
   color: white;
 }
 
+.family-node-link-example {
+  background-color: pink;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  border-color: crimson;
+  border-style: dashed;
+  margin: auto;
+  display: table;
+}
+
 /* Umrandung der FontAwesome Icons verhindern*/
-.white-icon svg{
-  border-width: 0px; 
+.white-icon svg {
+  border-width: 0px;
+}
+
+.header-button {
+  margin-left: 10px;
+  background: transparent;
+  border-width: 0px;
 }
 
 .title {
@@ -48,4 +64,3 @@ div[class^="fullscreeen"] svg {
   margin-left: 20px;
   vertical-align: top;
 }
-
