@@ -1,6 +1,6 @@
 import React from "react";
 import dTree from "d3-dtree";
-import "./FamilyGraph.css";
+import "./FamilyDTree.css";
 import "jsoneditor-react/es/editor.min.css";
 
 class FamilyDTree extends React.Component {
@@ -37,7 +37,7 @@ class FamilyDTree extends React.Component {
         bottom: 0,
         left: 0
       },
-      nodeWidth: 100,
+      nodeWidth: 150,
       styles: {
         node: "node",
         linage: "linage",
