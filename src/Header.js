@@ -16,14 +16,18 @@ class Header extends React.Component {
 
   render() {
     return (
-      <Navbar bg="dark">
+      <Navbar expand="md" bg="dark">
+
         <Navbar.Brand>
           <span className="white-icon">
-            <FontAwesomeIcon size="3x" icon={faTree} />{" "}
+            <FontAwesomeIcon size="2x" icon={faTree} />{" "}
           </span>
           <span className="title">Familienstammbaum</span>
         </Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-dark" />
+
+
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Navbar.Text>
             <span className="white-icon">
               <HelpDialog></HelpDialog>
@@ -31,7 +35,7 @@ class Header extends React.Component {
                 className="header-button"
                 onClick={this.props.onShowDataClick}
               >
-                <FontAwesomeIcon size="2x" icon={faCode} />
+                <FontAwesomeIcon size="1.5x" icon={faCode} />
               </Button>
             </span>
           </Navbar.Text>
@@ -50,7 +54,7 @@ function HelpDialog() {
   return (
     <>
       <Button className="header-button" variant="primary" onClick={handleShow}>
-        <FontAwesomeIcon size="2x" icon={faQuestionCircle} />
+        <FontAwesomeIcon size="1.5x" icon={faQuestionCircle} />
       </Button>
 
       <Modal show={show} onHide={handleClose}>

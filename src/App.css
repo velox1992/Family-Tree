@@ -1,6 +1,3 @@
-body {
-}
-
 .center-block {
   margin-left: auto;
   margin-right: auto;
@@ -36,6 +33,12 @@ div[class^="fullscreeen"] svg {
   color: white;
 }
 
+/* Umrandung der FontAwesome Icons verhindern*/
+.white-icon svg {
+  border-width: 0px;
+}
+
+
 .family-node-link-example {
   background-color: pink;
   border-style: solid;
@@ -47,20 +50,16 @@ div[class^="fullscreeen"] svg {
   display: table;
 }
 
-/* Umrandung der FontAwesome Icons verhindern*/
-.white-icon svg {
-  border-width: 0px;
-}
 
 .header-button {
-  margin-left: 10px;
+
   background: transparent;
   border-width: 0px;
 }
 
 .title {
   color: white;
-  font-size: 2em;
+
   margin-left: 20px;
   vertical-align: top;
 }
