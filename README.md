@@ -14,11 +14,17 @@ Die für die Darstellung notwendigen Daten sind in der Datei `src/FamilyData.jso
 
 ### Verwendete Komponenten
 
-tbc
+Im Kern der Anwendung wird die Visualisierungsbibliothek D3 für die Darstellung des Baums genutzt. Darauf aufbauend wurde die Bibliothek dTree von ErikGartner (https://github.com/ErikGartner/dTree) entwickelt. Diese Bibliothek wird auch für die Darstellung in dieser Anwendung genutzt.
+
+Für die Gestaltung der Seite und die Einbettung der Bibliothek wird React verwendet.
 
 ### Anpassung der Datenhaltung
 
-Ursprünglich nur hierarchische Datenhaltung möglich
+Die dTree Bibliothek erwartet eine hierarchischen Datenstruktur als Eingabe. Jedoch ist es nicht möglich Stammbäume mit mehreren Familienseiten in einer Baumstruktur zu pflegen. Für die Pflege solcher Stammbäume ist eine Graph-Datenstruktur notwendig.
 
-Erstellung eines Konverters der mit einer Graph Datenstruktur arbeiten kann und daraus eine gewünschte Baumstruktur erstellt
+Aus diesem Grund habe ich einen Konverter geschrieben der eine definierte Graph-Datenstruktur (siehe `src/FamilyData.json`) und einen selektieren Knoten (ID des Knoten) als Eingabe erwartet und aus diesen Parametern eine Baumstruktur erzeugt. Diese erzeugte Baumstruktur repräsentiert dann den Familienstammbaum des selektierten Knotens.
+
+Der Konverter GraphToDTreeConverter ist als NPM-Package verfügbar: https://www.npmjs.com/package/graphtodtreeconverter
+
+
 
