@@ -854,6 +854,11 @@
       "id": 170,
       "name": "",
       "gender": "woman"
+    }	,
+    {
+      "id": 171,
+      "name": "Fabian",
+      "gender": "man"
     }
   ],
   "connections": [
@@ -915,7 +920,7 @@
     {
       "partner1Id": 29,
       "partner2Id": 30,
-      "childrenIds": []
+      "childrenIds": [171]
     },
     {
       "partner1Id": 32,
